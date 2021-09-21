@@ -1,0 +1,47 @@
+{
+  "name": "front-end",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ethersproject/contracts": "^5.4.1",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@usedapp/core": "^0.4.8",
+    "@walletconnect/web3-provider": "^1.6.5",
+    "ethers": "^5.4.7",
+    "moralis": "^0.0.51",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-moralis": "^0.2.3",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1",
+    "web3-react": "^5.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

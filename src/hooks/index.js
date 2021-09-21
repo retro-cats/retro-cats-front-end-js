@@ -1,0 +1,1 @@
+export { useMintCats } from "./useMintCats"
