@@ -25,17 +25,16 @@ export const MyCats = ({ networkId, retroCatsAddress }) => {
     )
 
     const updateNFTImages = async () => {
-        let cat = await Moralis.Cloud.run("updateNFTImages", { networkId, retroCatsAddress })
-        console.log(cat)
-        return cat
+
+        await Moralis.Cloud.run("updateNFTImages", { networkId, retroCatsAddress })
     }
 
     return (
         <Box textAlign='center'>
             {error && <div>{error.message}</div>}
-            {data ? <CatList catListData={data} retroCatsAddress={retroCatsAddress} /> : <div>Loading...</div>}
+            {data ? <CatList catListData={data} retroCatsAddress={retroCatsAddress} networkId={networkId} /> : <div>Loading...</div>}
             <Button
-                onClick={async () => await updateNFTImages()}
+                onClick={async () => updateNFTImages()}
                 color="primary"
                 size="small">
                 Refresh
