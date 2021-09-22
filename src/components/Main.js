@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
 import networkMapping from '../chain-info/deployments/map.json'
 import { MintCats } from "./MintCats"
-import { ShowCats } from "./ShowCats"
-
+import { MyCats } from "./MyCats"
+import { SearchCats } from "./SearchCats"
 import helperConfig from '../helper-config.json'
 import brownieConfig from '../brownie-config.json'
 import { Box, makeStyles, Tabs, Tab, Container } from '@material-ui/core'
 import { TabContext, TabList, TabPanel } from "@material-ui/lab"
 import { constants } from 'ethers'
-import { NFTView } from './ShowCats'
+import { NFTView } from './MyCats'
 import {
   useMoralisWeb3Api,
   useMoralisWeb3ApiCall,
@@ -32,6 +32,12 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
+const tabOptions = [
+  "mint cats",
+  "my cats",
+  "search cats"
+]
+
 export const isValidNetwork = (network) => {
   if (networkMapping.hasOwnProperty(network)) {
     return true
@@ -52,7 +58,7 @@ export const Main = () => {
     return null
   }
 
-  const [selectedTab, setSelectedTab] = useState("mint-cats")
+  const [selectedTab, setSelectedTab] = useState(tabOptions[0])
   const [networkId, setNetworkId] = useState(null)
 
   useEffect(() => {
@@ -66,12 +72,6 @@ export const Main = () => {
   const handleTabChange = (event, newTab) => {
     setSelectedTab(newTab)
   }
-
-  const tabOptions = [
-    "mint-cats",
-    "show-cats"
-  ]
-
 
   const retroCatsAddress = isValidNetwork(networkId) ? networkMapping[networkId.toString()]['RetroCats'][0] : "0x0000000000000000000000000000000000000000"
   return (
@@ -87,7 +87,7 @@ export const Main = () => {
               </TabList>
               {tabOptions.map((tabOption) => {
                 return (<TabPanel className={classes.tabContent} value={tabOption} key={tabOption}>
-                  {tabOption === "mint-cats" ? <MintCats networkId={networkId} retroCatsAddress={retroCatsAddress} /> : <ShowCats networkId={networkId} retroCatsAddress={retroCatsAddress} />}
+                  {tabOption === "mint cats" ? <MintCats networkId={networkId} retroCatsAddress={retroCatsAddress} /> : tabOption === "my cats" ? <MyCats networkId={networkId} retroCatsAddress={retroCatsAddress} /> : <SearchCats networkId={networkId} retroCatsAddress={retroCatsAddress} />}
                 </TabPanel>)
               })}
             </TabContext>
