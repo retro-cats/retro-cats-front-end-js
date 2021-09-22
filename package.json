@@ -16,9 +16,11 @@
     "moralis": "^0.0.51",
     "moralis-admin-cli": "^2.1.13",
     "react": "^17.0.2",
+    "react-confetti": "^6.0.1",
     "react-dom": "^17.0.2",
     "react-moralis": "^0.2.3",
     "react-scripts": "4.0.3",
+    "react-use": "^17.3.1",
     "web-vitals": "^1.0.1",
     "web3-react": "^5.0.5"
   },

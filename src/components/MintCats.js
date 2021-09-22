@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
-import { Input, Button, makeStyles, CircularProgress, Box } from "@material-ui/core"
+import useWindowSize from 'react-use/lib/useWindowSize'
+import { Input, Button, makeStyles, CircularProgress, Box, Snackbar, Backdrop } from "@material-ui/core"
 import { useMintCats } from "../hooks"
+import { BackDropContent } from "./BackDropContent"
 
 
 const useStyles = makeStyles((theme) => ({
@@ -18,6 +20,16 @@ export const MintCats = ({ retroCatsAddress }) => {
     console.log(newAmount)
   }
   const { mintCats, mintCatsState } = useMintCats(retroCatsAddress)
+  const [txSuccess, setTxSuccess] = useState(false)
+  useEffect(() => {
+    if (mintCatsState.status === true) {
+      setTxSuccess(true)
+    }
+  }, [mintCatsState.status])
+
+  const handleCloseBackDrop = () => {
+    setTxSuccess(false)
+  }
 
   const handleMintSubmit = () => {
     return mintCats(amountOfCats)
@@ -27,25 +39,28 @@ export const MintCats = ({ retroCatsAddress }) => {
 
   const classes = useStyles()
   return (
-    <div>
-      <Box textAlign='center'>
-        <Input
-          onChange={handleInputChange}
-          placeholder="Number of Cats to mint, ie: 5"
-          fullWidth={true}
-          className={classes.input}
-          type="number"
-        />
-        <Button
-          onClick={handleMintSubmit}
-          color="primary"
-          size="large"
-          variant='contained'
-          disabled={isMining || amountOfCats <= 0}>
-          {isMining ? <CircularProgress size={26} /> : "Mint Cats"}
-        </Button>
-      </Box>
-      {mintCatsState.status ? <div></div> : <div></div>}
-    </div>
+    <>
+      <BackDropContent txSuccess={txSuccess} handleCloseBackDrop={handleCloseBackDrop} />
+      <div>
+        <Box textAlign='center'>
+          <Input
+            onChange={handleInputChange}
+            placeholder="Number of Cats to mint, ie: 5"
+            fullWidth={true}
+            className={classes.input}
+            type="number"
+          />
+          <Button
+            onClick={handleMintSubmit}
+            color="primary"
+            size="large"
+            variant='contained'
+            disabled={isMining || amountOfCats <= 0}>
+            {isMining ? <CircularProgress size={26} /> : "Mint Cats"}
+          </Button>
+        </Box>
+        {mintCatsState.status ? <div></div> : <div></div>}
+      </div>
+    </>
   )
 }

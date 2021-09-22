@@ -5,19 +5,13 @@ import React, { useState, useEffect } from "react"
 
 const useStyles = makeStyles(theme => ({
     catImg: {
-        '&:hover': {
-            background: "#f00",
-        },
-        padding: "50px",
-        width: "50px",
-    },
-    container: {
-        display: "inline-grid",
-        gridTemplateColumns: "auto auto auto",
-        gap: theme.spacing(1),
-        alignItems: "center"
+        "&:hover": {
+            boxShadow: "10px 5px 5px red;",
+            backgroundColor: "gold",
+        }
     }
 }))
+
 
 const baseOpenseaURL = "https://opensea.io/assets/"
 const baseTestnetOpenseaURL = "https://testnets.opensea.io/assets/"
@@ -50,19 +44,18 @@ export const CatList = ({ catListData, retroCatsAddress, networkId }) => {
         <div>
             {
                 catListData.result.length > 0 ?
-                    <ImageList sx={{ width: 200, height: 300 }} cols={3} rowHeight={400}>
+                    <ImageList cols={3} rowHeight={270} gap={20}>
                         {catListData.result.map(cat => (
-                            <a href={networkId === 1 ? baseOpenseaURL + retroCatsAddress + "/" + cat.token_id : baseTestnetOpenseaURL + retroCatsAddress + "/" + cat.token_id} target="_blank" rel="noreferrer">
-                                <ImageListItem>
-                                    <img
-                                        // className={classes.catImg}
-                                        // src={imageURLs[cat.token_id]}
-                                        src={baseURI + cat.token_id}
-                                        alt="retrocat"
-                                        loading="lazy"
-                                        key={cat.token_id} />
-                                </ImageListItem>
-                            </a>
+                            <ImageListItem className={classes.catImg} key={cat.token_id}>
+                                {/* <a href={networkId === 1 ? baseOpenseaURL + retroCatsAddress + "/" + cat.token_id : baseTestnetOpenseaURL + retroCatsAddress + "/" + cat.token_id} target="_blank" rel="noreferrer"> */}
+                                <img
+                                    src={imageURLs[cat.token_id]}
+                                    alt="retrocat"
+                                    loading="lazy"
+                                    key={cat.token_id} />
+                                {/* </a> */}
+                            </ImageListItem>
+                            // 
                         ))}
                     </ImageList >
                     : <Box>No cats found</Box>

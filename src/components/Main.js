@@ -7,8 +7,6 @@ import helperConfig from '../helper-config.json'
 import brownieConfig from '../brownie-config.json'
 import { Box, makeStyles, Tabs, Tab, Container } from '@material-ui/core'
 import { TabContext, TabList, TabPanel } from "@material-ui/lab"
-import { constants } from 'ethers'
-import { NFTView } from './MyCats'
 import {
   useMoralisWeb3Api,
   useMoralisWeb3ApiCall,

@@ -3,7 +3,8 @@ import {
     useMoralisWeb3Api,
     useMoralisWeb3ApiCall
 } from 'react-moralis'
-import { Box, Button, makeStyles } from '@material-ui/core'
+import { Box, Button, makeStyles, Snackbar } from '@material-ui/core'
+import Alert from "@material-ui/lab/Alert"
 import helperConfig from "../helper-config.json"
 import React, { useState, useEffect } from "react"
 import { CatList } from "./CatList"
@@ -19,14 +20,19 @@ export const MyCats = ({ networkId, retroCatsAddress }) => {
     const networkName = networkId ? helperConfig[String(networkId)] : "dev"
     const Web3Api = useMoralisWeb3Api()
     const { web3, user, Moralis } = useMoralis()
+    const [refreshButtonHit, setRefreshButtonHit] = useState(false)
+    const handleCloseSnack = () => {
+        setRefreshButtonHit(false)
+    }
 
     const { fetch, data, error, isLoading } = useMoralisWeb3ApiCall(Web3Api.account.getNFTsForContract,
         { chain: networkName, address: user.attributes.accounts, token_address: retroCatsAddress }
     )
 
     const updateNFTImages = async () => {
-
-        await Moralis.Cloud.run("updateNFTImages", { networkId, retroCatsAddress })
+        setRefreshButtonHit(true)
+        let result = await Moralis.Cloud.run("updateNFTImages", { networkId, retroCatsAddress })
+        console.log(result)
     }
 
     return (
@@ -39,6 +45,15 @@ export const MyCats = ({ networkId, retroCatsAddress }) => {
                 size="small">
                 Refresh
             </Button>
+            <Snackbar
+                open={refreshButtonHit}
+                autoHideDuration={5000}
+                onClose={handleCloseSnack}
+            >
+                <Alert onClose={handleCloseSnack} severity="success">
+                    Refresh queued! Check back in a few minutes!
+                </Alert>
+            </Snackbar>
         </Box>
 
     )
