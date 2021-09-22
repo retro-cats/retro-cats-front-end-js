@@ -32,14 +32,14 @@ export const MyCats = ({ networkId, retroCatsAddress }) => {
 
     return (
         <Box textAlign='center'>
-            {/* <Button
+            {error && <div>{error.message}</div>}
+            {data ? <CatList catListData={data} retroCatsAddress={retroCatsAddress} /> : <div>Loading...</div>}
+            <Button
                 onClick={async () => await updateNFTImages()}
                 color="primary"
                 size="small">
                 Refresh
-            </Button> */}
-            {error && <div>{error.message}</div>}
-            {data ? <CatList catListData={data} /> : <div>Loading...</div>}
+            </Button>
         </Box>
 
     )

@@ -22,7 +22,6 @@ export const MintCats = ({ retroCatsAddress }) => {
   const handleMintSubmit = () => {
     return mintCats(amountOfCats)
   }
-  console.log(JSON.stringify(mintCatsState))
 
   const isMining = mintCatsState.status === "Mining"
 

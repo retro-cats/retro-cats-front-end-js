@@ -1,2 +1,4 @@
+build/
+.DS*
 .env
 node_modules
