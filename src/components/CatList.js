@@ -7,8 +7,8 @@ import { makeStyles } from '@mui/styles'
 const useStyles = makeStyles(theme => ({
     catImg: {
         "&:hover": {
-            boxShadow: "10px 5px 5px red;",
-            backgroundColor: "gold",
+            boxShadow: "10px 5px 5px black;",
+            backgroundColor: "blue",
         }
     }
 }))
@@ -45,10 +45,11 @@ export const CatList = ({ catListData, retroCatsAddress, networkId }) => {
         <div>
             {
                 catListData.result.length > 0 ?
-                    <ImageList cols={3} rowHeight={270} gap={20}>
+                    <ImageList cols={3} rowHeight={270}>
                         {catListData.result.map(cat => (
-                            <ImageListItem className={classes.catImg} key={cat.token_id}>
+                            <ImageListItem className={classes.catImg} key={cat.token_id} sx={{ padding: 1 }}>
                                 {/* <a href={networkId === 1 ? baseOpenseaURL + retroCatsAddress + "/" + cat.token_id : baseTestnetOpenseaURL + retroCatsAddress + "/" + cat.token_id} target="_blank" rel="noreferrer"> */}
+
                                 <img
                                     src={imageURLs[cat.token_id]}
                                     alt="retrocat"

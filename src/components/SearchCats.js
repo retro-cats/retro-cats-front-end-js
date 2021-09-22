@@ -5,14 +5,12 @@ import opensea from '../img/opensea.png'
 
 const useStyles = makeStyles(() => ({
   title: {
-    color: "black",
     textAlign: 'center',
     padding: "4",
-    fontSize: '2rem',
     justifyContent: 'center',
   },
   openseaImg: {
-    width: '50px',
+    width: '100px',
   }
 }))
 
@@ -27,7 +25,9 @@ export const SearchCats = ({ networkId, retroCatsAddress }) => {
     <Box className={classes.title}>
       <a href={networkId === 4 ? testnetOpensea : openseaURL}
         target="_blank" rel="noreferrer">
-        <Button className={classes.title}
+        <Button
+          sx={{ fontSize: 32 }}
+          color="secondary"
           variant='contained'>
           View on Opensea! &nbsp;
           <img src={opensea} alt="" className={classes.openseaImg} />
