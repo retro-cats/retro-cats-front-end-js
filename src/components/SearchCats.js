@@ -1,11 +1,13 @@
-import { Box, Button, makeStyles, Link } from '@material-ui/core'
+import { Box, Button, Link } from '@mui/material'
+import { makeStyles } from '@mui/styles'
+
 import opensea from '../img/opensea.png'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   title: {
-    color: theme.palette.common.black,
+    color: "black",
     textAlign: 'center',
-    padding: theme.spacing(4),
+    padding: "4",
     fontSize: '2rem',
     justifyContent: 'center',
   },

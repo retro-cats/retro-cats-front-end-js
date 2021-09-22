@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react"
 import useWindowSize from 'react-use/lib/useWindowSize'
-import { Input, Button, makeStyles, CircularProgress, Box, Snackbar, Backdrop } from "@material-ui/core"
+import { Input, Button, CircularProgress, Box, Snackbar, Backdrop } from "@mui/material"
 import { useMintCats } from "../hooks"
 import { BackDropContent } from "./BackDropContent"
+import { makeStyles } from '@mui/styles'
 
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   input: {
     textAlign: 'center',
     width: '50%',

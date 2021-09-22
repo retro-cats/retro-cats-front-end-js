@@ -3,15 +3,17 @@ import {
     useMoralisWeb3Api,
     useMoralisWeb3ApiCall
 } from 'react-moralis'
-import { Box, Button, makeStyles, Snackbar } from '@material-ui/core'
-import Alert from "@material-ui/lab/Alert"
+import { Box, Button, Snackbar } from '@mui/material'
+import { makeStyles } from '@mui/styles'
+
+import Alert from "@mui/lab/Alert"
 import helperConfig from "../helper-config.json"
 import React, { useState, useEffect } from "react"
 import { CatList } from "./CatList"
 
 const useStyles = makeStyles(theme => ({
     default: {
-        padding: theme.spacing(1),
+        padding: 1,
     },
 }))
 
@@ -31,8 +33,7 @@ export const MyCats = ({ networkId, retroCatsAddress }) => {
 
     const updateNFTImages = async () => {
         setRefreshButtonHit(true)
-        let result = await Moralis.Cloud.run("updateNFTImages", { networkId, retroCatsAddress })
-        console.log(result)
+        Moralis.Cloud.run("updateNFTImages", { networkId, retroCatsAddress })
     }
 
     return (

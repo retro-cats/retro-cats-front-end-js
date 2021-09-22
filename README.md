@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# Setup
 
-Woot
+```
+git clone (this repo)
+cd (this repo)
+yarn 
+```
+
+# Deploying
+```
+yarn build
+moralis-admin-cli deploy -p ./build
+```
+
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

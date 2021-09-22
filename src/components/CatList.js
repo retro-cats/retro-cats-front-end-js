@@ -1,6 +1,7 @@
-import { Box, makeStyles, ImageList, ImageListItem } from '@material-ui/core'
+import { Box, ImageList, ImageListItem } from '@mui/material'
 import { useMoralis, useMoralisFile } from 'react-moralis'
 import React, { useState, useEffect } from "react"
+import { makeStyles } from '@mui/styles'
 
 
 const useStyles = makeStyles(theme => ({
@@ -58,7 +59,7 @@ export const CatList = ({ catListData, retroCatsAddress, networkId }) => {
                             // 
                         ))}
                     </ImageList >
-                    : <Box>No cats found</Box>
+                    : <Box>No cats found <br /> Maybe hit refresh?</Box>
             }
         </div>
     )

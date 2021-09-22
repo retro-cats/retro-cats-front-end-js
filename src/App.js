@@ -1,11 +1,11 @@
 import React from 'react'
 import { Header } from './components/Header'
 import { Main } from './components/Main'
-import { Container, makeStyles } from '@material-ui/core'
-import { useMoralis } from 'react-moralis'
+import { Container } from '@mui/material'
+import { makeStyles } from '@mui/styles'
 
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   container: {
     borderRadius: "10px",
     boxShadow: "0px 0px 10px #000000",

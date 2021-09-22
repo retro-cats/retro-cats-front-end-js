@@ -1,16 +1,17 @@
-import { Button, makeStyles } from '@material-ui/core'
+import { Button } from '@mui/material'
 import { useMoralis, useMoralisWeb3Api } from 'react-moralis'
 import { useState, useEffect } from 'react'
+import { makeStyles } from '@mui/styles'
 
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   navBarItems: {
     display: "flex",
     alignItems: "center",
-    padding: theme.spacing(4),
+    padding: 4,
     justifyContent: "space-between",
-    marginLeft: theme.spacing(10),
-    marginRight: theme.spacing(10),
+    marginLeft: "20%",
+    marginRight: "20%",
 
   }
 }))

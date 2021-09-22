@@ -1,15 +1,14 @@
 import Confetti from 'react-confetti'
-import { useState, useEffect } from 'react'
-import { Input, Button, makeStyles, CircularProgress, Box, Snackbar, Backdrop } from "@material-ui/core"
+import { Backdrop } from "@mui/material"
 import useWindowSize from 'react-use/lib/useWindowSize'
+import { makeStyles } from '@mui/styles'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     backDropTitle: {
         textAlign: 'center',
-        backgroundColor: 'white',
+        backgroundColor: 'gold',
         marginLeft: "25%",
         marginRight: "25%",
-        // background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 50%)',
         borderRadius: "10px",
         padding: "10px",
         fontSize: "3rem",
@@ -18,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: "25%",
         marginRight: "25%",
         textAlign: 'center',
-        backgroundColor: "white",
+        backgroundColor: "gold",
         borderRadius: "10px",
         padding: "10px",
         fontSize: "1rem",
@@ -43,7 +42,7 @@ export const BackDropContent = ({ txSuccess, handleCloseBackDrop }) => {
             </h1>
             <h2 className={classes.backDropText}>
                 In a few minutes, head over to the "My Cats" tab, hit the refresh button, wait a few seconds, then browser refresh, and you'll see your adorable new Cat!
-                Or jump to the search cats tab to see on Opensea!
+                <br /><br />Or jump to the search cats tab to see on Opensea!
             </h2>
         </div>
     </Backdrop>)

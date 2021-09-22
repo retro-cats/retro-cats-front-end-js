@@ -5,8 +5,9 @@ import { MyCats } from "./MyCats"
 import { SearchCats } from "./SearchCats"
 import helperConfig from '../helper-config.json'
 import brownieConfig from '../brownie-config.json'
-import { Box, makeStyles, Tabs, Tab, Container } from '@material-ui/core'
-import { TabContext, TabList, TabPanel } from "@material-ui/lab"
+import { Box, Tabs, Tab, Container } from '@mui/material'
+import { TabContext, TabList, TabPanel } from "@mui/lab"
+import { makeStyles } from '@mui/styles'
 import {
   useMoralisWeb3Api,
   useMoralisWeb3ApiCall,
@@ -14,11 +15,11 @@ import {
 } from 'react-moralis'
 import { MintOrViewCats } from './MintCats'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   title: {
-    color: theme.palette.common.black,
+    color: "black",
     textAlign: 'center',
-    padding: theme.spacing(4),
+    padding: 4,
     fontSize: '2rem',
   },
   box: {
