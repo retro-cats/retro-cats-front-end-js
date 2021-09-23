@@ -46,7 +46,6 @@ export const MintCats = ({ retroCatsAddress, networkId }) => {
   const classes = useStyles()
   return (
     <>
-      <BackDropContent txSuccess={txSuccess} handleCloseBackDrop={handleCloseBackDrop} />
       <div>
         <Box textAlign='center'>
           <Input
@@ -65,6 +64,7 @@ export const MintCats = ({ retroCatsAddress, networkId }) => {
             {isMining ? <CircularProgress size={26} /> : "Mint Cats"}
           </Button>
         </Box>
+        <BackDropContent txSuccess={txSuccess} handleCloseBackDrop={handleCloseBackDrop} />
         {mintCatsState.status ? <div></div> : <div></div>}
       </div>
     </>

@@ -1,5 +1,5 @@
 import { Box, ImageList, ImageListItem } from '@mui/material'
-import { useMoralis, useMoralisFile } from 'react-moralis'
+import { useMoralis } from 'react-moralis'
 import React, { useState, useEffect } from "react"
 import { makeStyles } from '@mui/styles'
 
