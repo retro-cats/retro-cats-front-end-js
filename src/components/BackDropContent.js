@@ -41,7 +41,10 @@ export const BackDropContent = ({ txSuccess, handleCloseBackDrop }) => {
                 Your Cat(s) are being randomly created!
             </h1>
             <h2 className={classes.backDropText}>
-                In a few minutes, head over to the "My Cats" tab, hit the refresh button, wait a few seconds, then browser refresh, and you'll see your adorable new Cat!
+                In a few minutes, head over to the "My Cats" tab.
+
+                <br /> If you don't see any cats, hit the refresh button, wait a few seconds, then browser refresh, and you'll see your adorable new Cat!
+
                 <br /><br />Or jump to the search cats tab to see on Opensea!
             </h2>
         </div>

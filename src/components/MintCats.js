@@ -4,6 +4,7 @@ import { Input, Button, CircularProgress, Box, Snackbar, Backdrop } from "@mui/m
 import { useMintCats } from "../hooks"
 import { BackDropContent } from "./BackDropContent"
 import { makeStyles } from '@mui/styles'
+import { useMoralis } from 'react-moralis'
 
 
 const useStyles = makeStyles(() => ({
@@ -13,7 +14,10 @@ const useStyles = makeStyles(() => ({
   }
 }))
 
-export const MintCats = ({ retroCatsAddress }) => {
+const shouldSleep = true
+
+export const MintCats = ({ retroCatsAddress, networkId }) => {
+  const { Moralis } = useMoralis()
   const [amountOfCats, setAmountOfCats] = useState(0)
   const handleInputChange = (event) => {
     const newAmount = event.target.value === "" ? "" : event.target.value
@@ -25,6 +29,7 @@ export const MintCats = ({ retroCatsAddress }) => {
   useEffect(() => {
     if (mintCatsState.status === true) {
       setTxSuccess(true)
+      Moralis.Cloud.run("updateNFTImages", { networkId, retroCatsAddress, shouldSleep })
     }
   }, [mintCatsState.status])
 

@@ -40,7 +40,6 @@ export const CatList = ({ catListData, retroCatsAddress, networkId }) => {
         return imageURLs
     }
 
-
     return (
         <div>
             {
@@ -49,7 +48,6 @@ export const CatList = ({ catListData, retroCatsAddress, networkId }) => {
                         {catListData.result.map(cat => (
                             <ImageListItem className={classes.catImg} key={cat.token_id} sx={{ padding: 1 }}>
                                 {/* <a href={networkId === 1 ? baseOpenseaURL + retroCatsAddress + "/" + cat.token_id : baseTestnetOpenseaURL + retroCatsAddress + "/" + cat.token_id} target="_blank" rel="noreferrer"> */}
-
                                 <img
                                     src={imageURLs[cat.token_id]}
                                     alt="retrocat"

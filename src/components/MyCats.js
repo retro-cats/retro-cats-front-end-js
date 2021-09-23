@@ -31,9 +31,10 @@ export const MyCats = ({ networkId, retroCatsAddress }) => {
         { chain: networkName, address: user.attributes.accounts, token_address: retroCatsAddress }
     )
 
-    const updateNFTImages = async () => {
+    const updateNFTImages = () => {
         setRefreshButtonHit(true)
-        Moralis.Cloud.run("updateNFTImages", { networkId, retroCatsAddress })
+        let shouldSleep = false
+        Moralis.Cloud.run("updateNFTImages", { networkId, retroCatsAddress, shouldSleep })
     }
 
     return (

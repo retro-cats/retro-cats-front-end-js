@@ -1,10 +1,13 @@
 # Setup
 
 ```
-git clone (this repo)
-cd (this repo)
+git clone https://github.com/retro-cats/retro-cats-front-end-js
+cd retro-cats-front-end-js
 yarn 
+yarn start
 ```
+
+It currently only works with the Rinkeby Chain. 
 
 # Deploying
 ```
