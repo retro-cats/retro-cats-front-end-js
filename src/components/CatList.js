@@ -46,15 +46,15 @@ export const CatList = ({ catListData, retroCatsAddress, networkId }) => {
                 catListData.result.length > 0 ?
                     <ImageList cols={3} rowHeight={270}>
                         {catListData.result.map(cat => (
-                            <ImageListItem className={classes.catImg} key={cat.token_id} sx={{ padding: 1 }}>
-                                {/* <a href={networkId === 1 ? baseOpenseaURL + retroCatsAddress + "/" + cat.token_id : baseTestnetOpenseaURL + retroCatsAddress + "/" + cat.token_id} target="_blank" rel="noreferrer"> */}
-                                <img
-                                    src={imageURLs[cat.token_id]}
-                                    alt="retrocat"
-                                    loading="lazy"
-                                    key={cat.token_id} />
-                                {/* </a> */}
-                            </ImageListItem>
+                            <a href={networkId === 1 ? baseOpenseaURL + retroCatsAddress + "/" + cat.token_id : baseTestnetOpenseaURL + retroCatsAddress + "/" + cat.token_id} target="_blank" rel="noreferrer">
+                                <ImageListItem className={classes.catImg} key={cat.token_id} sx={{ padding: 1 }}>
+                                    <img
+                                        src={imageURLs[cat.token_id]}
+                                        alt="retrocat"
+                                        loading="lazy"
+                                        key={cat.token_id} />
+                                </ImageListItem>
+                            </a>
                             // 
                         ))}
                     </ImageList >
