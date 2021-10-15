@@ -318,7 +318,7 @@
           "type": "uint256"
         }
       ],
-      "name": "mint_cat",
+      "name": "mint_cats",
       "outputs": [
         {
           "internalType": "uint256",
@@ -3461,7 +3461,7 @@
                 "src": "4850:12:15"
               }
             ],
-            "name": "mint_cat",
+            "name": "mint_cats",
             "nameLocation": "4809:8:15",
             "nodeType": "FunctionDefinition",
             "parameters": {
@@ -7822,7 +7822,7 @@
         }
       },
       "1": {
-        "RetroCats.mint_cat": {
+        "RetroCats.mint_cats": {
           "124": [
             2259,
             2278,
@@ -7844,7 +7844,7 @@
       "13": {},
       "14": {},
       "15": {
-        "RetroCats.mint_cat": {
+        "RetroCats.mint_cats": {
           "105": [
             4906,
             4937,
@@ -8118,7 +8118,7 @@
             6005
           ]
         },
-        "RetroCats.mint_cat": {
+        "RetroCats.mint_cats": {
           "25": [
             4898,
             4967
@@ -8584,7 +8584,7 @@
       "isApprovedForAll(address,address)": {
         "details": "See {IERC721-isApprovedForAll}."
       },
-      "mint_cat(uint256)": {
+      "mint_cats(uint256)": {
         "details": "We only trigger a chainlink VRF call every s_vrfCallInterval mints. Otherwise, we will have the Chainlink Keeper Network create our  random number, so others can't exploit searching for randomness. We do this as a cost saving mechanism. Since keepers is cheaper than  Chainlink VRF calls, but we still want true randomness. ",
         "notice": "Mints a new random cat"
       },
@@ -13922,7 +13922,7 @@
       "path": "2"
     },
     "1044": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4800,
         5702
@@ -13931,7 +13931,7 @@
       "path": "15"
     },
     "1045": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4800,
         5702
@@ -13941,7 +13941,7 @@
       "value": "0x2DB"
     },
     "1048": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4800,
         5702
@@ -13951,7 +13951,7 @@
       "value": "0x422"
     },
     "1051": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4800,
         5702
@@ -13960,7 +13960,7 @@
       "path": "15"
     },
     "1052": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4800,
         5702
@@ -13970,7 +13970,7 @@
       "value": "0x4"
     },
     "1054": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4800,
         5702
@@ -13980,7 +13980,7 @@
       "value": "0x23F7"
     },
     "1057": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "jump": "i",
       "offset": [
         4800,
@@ -13990,7 +13990,7 @@
       "path": "15"
     },
     "1058": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4800,
         5702
@@ -13999,7 +13999,7 @@
       "path": "15"
     },
     "1059": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4800,
         5702
@@ -14009,7 +14009,7 @@
       "value": "0xCE6"
     },
     "1062": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "jump": "i",
       "offset": [
         4800,
@@ -24540,7 +24540,7 @@
       "op": "JUMP"
     },
     "3302": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4800,
         5702
@@ -24549,7 +24549,7 @@
       "path": "15"
     },
     "3303": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4872,
         4887
@@ -24577,7 +24577,7 @@
       "value": "0x9"
     },
     "3309": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         2259,
         2266
@@ -24595,7 +24595,7 @@
     },
     "3311": {
       "branch": 124,
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         2259,
         2278
@@ -24622,7 +24622,7 @@
       "path": "1"
     },
     "3316": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         2251,
         2314
@@ -24632,7 +24632,7 @@
       "value": "0x40"
     },
     "3318": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         2251,
         2314
@@ -24660,7 +24660,7 @@
       "path": "1"
     },
     "3327": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         2251,
         2314
@@ -24682,7 +24682,7 @@
       "value": "0x4"
     },
     "3332": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         2251,
         2314
@@ -24691,7 +24691,7 @@
       "path": "1"
     },
     "3333": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         2251,
         2314
@@ -24790,7 +24790,7 @@
       "path": "1"
     },
     "3393": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4919,
         4927
@@ -24801,7 +24801,7 @@
       "value": "0x15"
     },
     "3395": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4919,
         4927
@@ -24810,7 +24810,7 @@
       "path": "15"
     },
     "3396": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4919,
         4937
@@ -24820,7 +24820,7 @@
       "value": "0xD4E"
     },
     "3399": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4919,
         4937
@@ -24829,7 +24829,7 @@
       "path": "15"
     },
     "3400": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4930,
         4937
@@ -24838,7 +24838,7 @@
       "path": "15"
     },
     "3401": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4930,
         4937
@@ -24847,7 +24847,7 @@
       "path": "15"
     },
     "3402": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4919,
         4937
@@ -24857,7 +24857,7 @@
       "value": "0x2666"
     },
     "3405": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "jump": "i",
       "offset": [
         4919,
@@ -24867,7 +24867,7 @@
       "path": "15"
     },
     "3406": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4919,
         4937
@@ -24876,7 +24876,7 @@
       "path": "15"
     },
     "3407": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4906,
         4915
@@ -24885,7 +24885,7 @@
       "path": "15"
     },
     "3408": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4906,
         4937
@@ -24895,7 +24895,7 @@
     },
     "3409": {
       "branch": 105,
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4906,
         4937
@@ -24904,7 +24904,7 @@
       "path": "15"
     },
     "3410": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4898,
         4967
@@ -24915,7 +24915,7 @@
     },
     "3413": {
       "branch": 105,
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4898,
         4967
@@ -24924,7 +24924,7 @@
       "path": "15"
     },
     "3414": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4898,
         4967
@@ -24934,7 +24934,7 @@
       "value": "0x40"
     },
     "3416": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4898,
         4967
@@ -24954,7 +24954,7 @@
       "op": "SHL"
     },
     "3424": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4898,
         4967
@@ -24963,7 +24963,7 @@
       "path": "15"
     },
     "3425": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4898,
         4967
@@ -24976,7 +24976,7 @@
       "value": "0x20"
     },
     "3428": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4898,
         4967
@@ -24986,7 +24986,7 @@
       "value": "0x4"
     },
     "3430": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4898,
         4967
@@ -24995,7 +24995,7 @@
       "path": "15"
     },
     "3431": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4898,
         4967
@@ -25048,7 +25048,7 @@
       "op": "ADD"
     },
     "3481": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4898,
         4967
@@ -25061,7 +25061,7 @@
       "op": "JUMP"
     },
     "3485": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4898,
         4967
@@ -25070,7 +25070,7 @@
       "path": "15"
     },
     "3486": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5001,
         5008
@@ -25080,7 +25080,7 @@
       "statement": 26
     },
     "3487": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4985,
         4997
@@ -25090,7 +25090,7 @@
       "value": "0x16"
     },
     "3489": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4985,
         4997
@@ -25099,7 +25099,7 @@
       "path": "15"
     },
     "3490": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4985,
         5008
@@ -25109,7 +25109,7 @@
     },
     "3491": {
       "branch": 106,
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4985,
         5008
@@ -25118,7 +25118,7 @@
       "path": "15"
     },
     "3492": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4977,
         5069
@@ -25129,7 +25129,7 @@
     },
     "3495": {
       "branch": 106,
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4977,
         5069
@@ -25138,7 +25138,7 @@
       "path": "15"
     },
     "3496": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4977,
         5069
@@ -25148,7 +25148,7 @@
       "value": "0x40"
     },
     "3498": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4977,
         5069
@@ -25168,7 +25168,7 @@
       "op": "SHL"
     },
     "3506": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4977,
         5069
@@ -25177,7 +25177,7 @@
       "path": "15"
     },
     "3507": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4977,
         5069
@@ -25190,7 +25190,7 @@
       "value": "0x20"
     },
     "3510": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4977,
         5069
@@ -25200,7 +25200,7 @@
       "value": "0x4"
     },
     "3512": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4977,
         5069
@@ -25209,7 +25209,7 @@
       "path": "15"
     },
     "3513": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4977,
         5069
@@ -25279,7 +25279,7 @@
       "op": "ADD"
     },
     "3601": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4977,
         5069
@@ -25292,7 +25292,7 @@
       "op": "JUMP"
     },
     "3605": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4977,
         5069
@@ -25301,7 +25301,7 @@
       "path": "15"
     },
     "3606": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5083,
         5092
@@ -25311,7 +25311,7 @@
       "value": "0x0"
     },
     "3608": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5079,
         5696
@@ -25320,7 +25320,7 @@
       "path": "15"
     },
     "3609": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5102,
         5109
@@ -25329,7 +25329,7 @@
       "path": "15"
     },
     "3610": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5098,
         5099
@@ -25338,7 +25338,7 @@
       "path": "15"
     },
     "3611": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5098,
         5109
@@ -25347,7 +25347,7 @@
       "path": "15"
     },
     "3612": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5079,
         5696
@@ -25356,7 +25356,7 @@
       "path": "15"
     },
     "3613": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5079,
         5696
@@ -25366,7 +25366,7 @@
       "value": "0xF5E"
     },
     "3616": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5079,
         5696
@@ -25375,7 +25375,7 @@
       "path": "15"
     },
     "3617": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5139,
         5153
@@ -25386,7 +25386,7 @@
       "value": "0xA"
     },
     "3619": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5139,
         5153
@@ -25395,7 +25395,7 @@
       "path": "15"
     },
     "3620": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5129,
         5153
@@ -25404,7 +25404,7 @@
       "path": "15"
     },
     "3621": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5129,
         5153
@@ -25413,7 +25413,7 @@
       "path": "15"
     },
     "3622": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5167,
         5197
@@ -25424,7 +25424,7 @@
       "value": "0xE2F"
     },
     "3625": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5177,
         5187
@@ -25433,7 +25433,7 @@
       "path": "15"
     },
     "3626": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5189,
         5196
@@ -25442,7 +25442,7 @@
       "path": "15"
     },
     "3627": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5167,
         5176
@@ -25452,7 +25452,7 @@
       "value": "0x1A19"
     },
     "3630": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "jump": "i",
       "offset": [
         5167,
@@ -25462,7 +25462,7 @@
       "path": "15"
     },
     "3631": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5167,
         5197
@@ -25471,7 +25471,7 @@
       "path": "15"
     },
     "3632": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5231,
         5248
@@ -25481,7 +25481,7 @@
       "value": "0x12"
     },
     "3634": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5231,
         5248
@@ -25490,7 +25490,7 @@
       "path": "15"
     },
     "3635": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5214,
         5228
@@ -25500,7 +25500,7 @@
       "value": "0xA"
     },
     "3637": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5214,
         5228
@@ -25509,7 +25509,7 @@
       "path": "15"
     },
     "3638": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5214,
         5248
@@ -25519,7 +25519,7 @@
       "value": "0xE3F"
     },
     "3641": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5214,
         5248
@@ -25528,7 +25528,7 @@
       "path": "15"
     },
     "3642": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5214,
         5248
@@ -25537,7 +25537,7 @@
       "path": "15"
     },
     "3643": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5214,
         5248
@@ -25547,7 +25547,7 @@
       "value": "0x271E"
     },
     "3646": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "jump": "i",
       "offset": [
         5214,
@@ -25557,7 +25557,7 @@
       "path": "15"
     },
     "3647": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5214,
         5248
@@ -25566,7 +25566,7 @@
       "path": "15"
     },
     "3648": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5211,
         5637
@@ -25576,7 +25576,7 @@
       "value": "0xED2"
     },
     "3651": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5211,
         5637
@@ -25585,7 +25585,7 @@
       "path": "15"
     },
     "3652": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5272,
         5289
@@ -25595,7 +25595,7 @@
       "value": "0x0"
     },
     "3654": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5292,
         5327
@@ -25605,7 +25605,7 @@
       "value": "0xE53"
     },
     "3657": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5310,
         5319
@@ -25615,7 +25615,7 @@
       "value": "0xC"
     },
     "3659": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5310,
         5319
@@ -25624,7 +25624,7 @@
       "path": "15"
     },
     "3660": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5321,
         5326
@@ -25634,7 +25634,7 @@
       "value": "0xD"
     },
     "3662": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5321,
         5326
@@ -25643,7 +25643,7 @@
       "path": "15"
     },
     "3663": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5292,
         5309
@@ -25653,7 +25653,7 @@
       "value": "0x1A33"
     },
     "3666": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "jump": "i",
       "offset": [
         5292,
@@ -25663,7 +25663,7 @@
       "path": "15"
     },
     "3667": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5292,
         5327
@@ -25672,7 +25672,7 @@
       "path": "15"
     },
     "3668": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5376
@@ -25683,7 +25683,7 @@
       "value": "0x0"
     },
     "3670": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5376
@@ -25692,7 +25692,7 @@
       "path": "15"
     },
     "3671": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5376
@@ -25701,7 +25701,7 @@
       "path": "15"
     },
     "3672": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5376
@@ -25710,7 +25710,7 @@
       "path": "15"
     },
     "3673": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5365
@@ -25720,7 +25720,7 @@
       "value": "0xF"
     },
     "3675": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5376
@@ -25730,7 +25730,7 @@
       "value": "0x20"
     },
     "3677": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5376
@@ -25739,7 +25739,7 @@
       "path": "15"
     },
     "3678": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5376
@@ -25749,7 +25749,7 @@
       "value": "0x40"
     },
     "3680": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5376
@@ -25758,7 +25758,7 @@
       "path": "15"
     },
     "3681": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5376
@@ -25767,7 +25767,7 @@
       "path": "15"
     },
     "3682": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5376
@@ -25776,7 +25776,7 @@
       "path": "15"
     },
     "3683": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5376
@@ -25785,7 +25785,7 @@
       "path": "15"
     },
     "3684": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5386
@@ -25794,7 +25794,7 @@
       "path": "15"
     },
     "3685": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5386
@@ -25803,7 +25803,7 @@
       "path": "15"
     },
     "3686": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5345,
         5386
@@ -25812,7 +25812,7 @@
       "path": "15"
     },
     "3687": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25822,7 +25822,7 @@
       "statement": 30
     },
     "3688": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5272,
         5327
@@ -25831,7 +25831,7 @@
       "path": "15"
     },
     "3689": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5272,
         5327
@@ -25843,7 +25843,7 @@
       "op": "POP"
     },
     "3691": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25853,7 +25853,7 @@
       "value": "0x4DD7D0343CA2BA4D424FEC6C54658C1CAA13698AE25FBB598920BBF1C7659973"
     },
     "3724": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25862,7 +25862,7 @@
       "path": "15"
     },
     "3725": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25872,7 +25872,7 @@
       "value": "0xE99"
     },
     "3728": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25881,7 +25881,7 @@
       "path": "15"
     },
     "3729": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5379,
         5386
@@ -25909,7 +25909,7 @@
       "op": "JUMP"
     },
     "3737": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25918,7 +25918,7 @@
       "path": "15"
     },
     "3738": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25928,7 +25928,7 @@
       "value": "0x40"
     },
     "3740": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25937,7 +25937,7 @@
       "path": "15"
     },
     "3741": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25946,7 +25946,7 @@
       "path": "15"
     },
     "3742": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25955,7 +25955,7 @@
       "path": "15"
     },
     "3743": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25964,7 +25964,7 @@
       "path": "15"
     },
     "3744": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25973,7 +25973,7 @@
       "path": "15"
     },
     "3745": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5409,
         5433
@@ -25982,7 +25982,7 @@
       "path": "15"
     },
     "3746": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5456,
         5491
@@ -25993,7 +25993,7 @@
       "value": "0x40"
     },
     "3748": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5456,
         5491
@@ -26002,7 +26002,7 @@
       "path": "15"
     },
     "3749": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5481,
         5490
@@ -26011,7 +26011,7 @@
       "path": "15"
     },
     "3750": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5481,
         5490
@@ -26020,7 +26020,7 @@
       "path": "15"
     },
     "3751": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5456,
         5491
@@ -26030,7 +26030,7 @@
       "value": "0x6B200B23C1D48A948F260702DFFE8D791E8F196B57BDF0D7D5F76BCF0B974D62"
     },
     "3784": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5456,
         5491
@@ -26039,7 +26039,7 @@
       "path": "15"
     },
     "3785": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5456,
         5491
@@ -26049,7 +26049,7 @@
       "value": "0x0"
     },
     "3787": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5456,
         5491
@@ -26058,7 +26058,7 @@
       "path": "15"
     },
     "3788": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5456,
         5491
@@ -26067,7 +26067,7 @@
       "path": "15"
     },
     "3789": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5211,
         5637
@@ -26076,7 +26076,7 @@
       "path": "15"
     },
     "3790": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5211,
         5637
@@ -26086,7 +26086,7 @@
       "value": "0xF3B"
     },
     "3793": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5211,
         5637
@@ -26095,7 +26095,7 @@
       "path": "15"
     },
     "3794": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5211,
         5637
@@ -26104,7 +26104,7 @@
       "path": "15"
     },
     "3795": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5561
@@ -26115,7 +26115,7 @@
       "value": "0x13"
     },
     "3797": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26124,7 +26124,7 @@
       "path": "15"
     },
     "3798": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26133,7 +26133,7 @@
       "path": "15"
     },
     "3799": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26143,7 +26143,7 @@
       "value": "0x1"
     },
     "3801": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26152,7 +26152,7 @@
       "path": "15"
     },
     "3802": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26161,7 +26161,7 @@
       "path": "15"
     },
     "3803": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26170,7 +26170,7 @@
       "path": "15"
     },
     "3804": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26183,7 +26183,7 @@
       "value": "0x0"
     },
     "3807": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26192,7 +26192,7 @@
       "path": "15"
     },
     "3808": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26201,7 +26201,7 @@
       "path": "15"
     },
     "3809": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26210,7 +26210,7 @@
       "path": "15"
     },
     "3810": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26219,7 +26219,7 @@
       "path": "15"
     },
     "3811": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26229,7 +26229,7 @@
       "value": "0x66DE8FFDA797E3DE9C05E8FC57B3BF0EC28A930D40B0D285D93C06501CF6A090"
     },
     "3844": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26238,7 +26238,7 @@
       "path": "15"
     },
     "3845": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26247,7 +26247,7 @@
       "path": "15"
     },
     "3846": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26256,7 +26256,7 @@
       "path": "15"
     },
     "3847": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5531,
         5575
@@ -26265,7 +26265,7 @@
       "path": "15"
     },
     "3848": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5598,
         5622
@@ -26276,7 +26276,7 @@
       "value": "0x40"
     },
     "3850": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5598,
         5622
@@ -26294,7 +26294,7 @@
       "op": "MSTORE"
     },
     "3854": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5598,
         5622
@@ -26304,7 +26304,7 @@
       "value": "0x4DD7D0343CA2BA4D424FEC6C54658C1CAA13698AE25FBB598920BBF1C7659973"
     },
     "3887": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5598,
         5622
@@ -26320,7 +26320,7 @@
       "op": "ADD"
     },
     "3891": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5598,
         5622
@@ -26330,7 +26330,7 @@
       "value": "0x40"
     },
     "3893": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5598,
         5622
@@ -26339,7 +26339,7 @@
       "path": "15"
     },
     "3894": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5598,
         5622
@@ -26348,7 +26348,7 @@
       "path": "15"
     },
     "3895": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5598,
         5622
@@ -26357,7 +26357,7 @@
       "path": "15"
     },
     "3896": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5598,
         5622
@@ -26366,7 +26366,7 @@
       "path": "15"
     },
     "3897": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5598,
         5622
@@ -26375,7 +26375,7 @@
       "path": "15"
     },
     "3898": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5598,
         5622
@@ -26384,7 +26384,7 @@
       "path": "15"
     },
     "3899": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5211,
         5637
@@ -26393,7 +26393,7 @@
       "path": "15"
     },
     "3900": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5667,
         5681
@@ -26404,7 +26404,7 @@
       "value": "0xA"
     },
     "3902": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5667,
         5681
@@ -26413,7 +26413,7 @@
       "path": "15"
     },
     "3903": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5667,
         5685
@@ -26423,7 +26423,7 @@
       "value": "0xF49"
     },
     "3906": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5667,
         5685
@@ -26432,7 +26432,7 @@
       "path": "15"
     },
     "3907": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5684,
         5685
@@ -26442,7 +26442,7 @@
       "value": "0x1"
     },
     "3909": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5667,
         5685
@@ -26452,7 +26452,7 @@
       "value": "0x263A"
     },
     "3912": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "jump": "i",
       "offset": [
         5667,
@@ -26462,7 +26462,7 @@
       "path": "15"
     },
     "3913": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5667,
         5685
@@ -26471,7 +26471,7 @@
       "path": "15"
     },
     "3914": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5650,
         5664
@@ -26481,7 +26481,7 @@
       "value": "0xA"
     },
     "3916": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5650,
         5685
@@ -26490,7 +26490,7 @@
       "path": "15"
     },
     "3917": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5111,
         5114
@@ -26500,7 +26500,7 @@
       "statement": 35
     },
     "3918": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5111,
         5114
@@ -26510,7 +26510,7 @@
       "value": "0xF56"
     },
     "3921": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5111,
         5114
@@ -26519,7 +26519,7 @@
       "path": "15"
     },
     "3922": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5111,
         5114
@@ -26529,7 +26529,7 @@
       "value": "0x2703"
     },
     "3925": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "jump": "i",
       "offset": [
         5111,
@@ -26539,7 +26539,7 @@
       "path": "15"
     },
     "3926": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5111,
         5114
@@ -26548,7 +26548,7 @@
       "path": "15"
     },
     "3927": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5111,
         5114
@@ -26557,7 +26557,7 @@
       "path": "15"
     },
     "3928": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5111,
         5114
@@ -26566,7 +26566,7 @@
       "path": "15"
     },
     "3929": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5111,
         5114
@@ -26575,7 +26575,7 @@
       "path": "15"
     },
     "3930": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5079,
         5696
@@ -26585,7 +26585,7 @@
       "value": "0xE18"
     },
     "3933": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5079,
         5696
@@ -26594,7 +26594,7 @@
       "path": "15"
     },
     "3934": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         5079,
         5696
@@ -26632,7 +26632,7 @@
       "path": "1"
     },
     "3941": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4800,
         5702
@@ -26641,7 +26641,7 @@
       "path": "15"
     },
     "3942": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "offset": [
         4800,
         5702
@@ -26653,7 +26653,7 @@
       "op": "POP"
     },
     "3944": {
-      "fn": "RetroCats.mint_cat",
+      "fn": "RetroCats.mint_cats",
       "jump": "o",
       "offset": [
         4800,
@@ -50632,7 +50632,7 @@
     }
   },
   "sha1": "41a4215443cf873362800805febf52bbecd2ba10",
-  "source": "/** \n\u2588\u2588\u2588\u2588\u2588\u2588\u2557 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2588\u2588\u2588\u2588\u2557  \u2588\u2588\u2588\u2588\u2588\u2588\u2557      \u2588\u2588\u2588\u2588\u2588\u2588\u2557 \u2588\u2588\u2588\u2588\u2588\u2557 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557    \n\u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u2588\u2588\u2554\u2550\u2550\u2550\u2550\u255d\u255a\u2550\u2550\u2588\u2588\u2554\u2550\u2550\u255d\u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u2588\u2588\u2554\u2550\u2550\u2550\u2588\u2588\u2557    \u2588\u2588\u2554\u2550\u2550\u2550\u2550\u255d\u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u255a\u2550\u2550\u2588\u2588\u2554\u2550\u2550\u255d\u2588\u2588\u2554\u2550\u2550\u2550\u2550\u255d    \n\u2588\u2588\u2588\u2588\u2588\u2588\u2554\u255d\u2588\u2588\u2588\u2588\u2588\u2557     \u2588\u2588\u2551   \u2588\u2588\u2588\u2588\u2588\u2588\u2554\u255d\u2588\u2588\u2551   \u2588\u2588\u2551    \u2588\u2588\u2551     \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2551   \u2588\u2588\u2551   \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557    \n\u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u2588\u2588\u2554\u2550\u2550\u255d     \u2588\u2588\u2551   \u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u2588\u2588\u2551   \u2588\u2588\u2551    \u2588\u2588\u2551     \u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2551   \u2588\u2588\u2551   \u255a\u2550\u2550\u2550\u2550\u2588\u2588\u2551    \n\u2588\u2588\u2551  \u2588\u2588\u2551\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557   \u2588\u2588\u2551   \u2588\u2588\u2551  \u2588\u2588\u2551\u255a\u2588\u2588\u2588\u2588\u2588\u2588\u2554\u255d    \u255a\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2551  \u2588\u2588\u2551   \u2588\u2588\u2551   \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2551    \n\u255a\u2550\u255d  \u255a\u2550\u255d\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u255d   \u255a\u2550\u255d   \u255a\u2550\u255d  \u255a\u2550\u255d \u255a\u2550\u2550\u2550\u2550\u2550\u255d      \u255a\u2550\u2550\u2550\u2550\u2550\u255d\u255a\u2550\u255d  \u255a\u2550\u255d   \u255a\u2550\u255d   \u255a\u2550\u2550\u2550\u2550\u2550\u2550\u255d    \n                                                                                 \n\n<<https://github.com/retro-cats/retro-cats-contracts>>\n\n           __..--''``---....___   _..._    __\n       _.-'    .-/\";  `        ``<._  ``.''_ `. / // /\n   _.-' _..--.'_    \\                    `( ) ) // //\n   (_..-' // (< _     ;_..__               ; `' / ///\n //// // //  `-._,_)' // / ``--...____..-' /// / //\n*/\n// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.3;\n\nimport \"@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol\";\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\nimport \"@openzeppelin/contracts/security/ReentrancyGuard.sol\";\nimport \"@openzeppelin/contracts/utils/Strings.sol\";\nimport \"@chainlink/contracts/src/v0.8/VRFConsumerBase.sol\";\nimport \"../interfaces/KeeperCompatibleInterface.sol\";\n\ncontract RetroCats is Ownable, ERC721URIStorage, VRFConsumerBase, ReentrancyGuard, KeeperCompatibleInterface{\n    using Strings for uint256;\n    \n    // ERC721 Variables\n    uint256 public s_tokenCounter;\n    string internal s_baseURI;\n\n    // Chainlink VRF Variables\n    bytes32 internal s_keyHash;\n    uint256 public s_fee;\n    uint256 internal s_recentRandomNumber;\n    mapping(bytes32 => uint256) internal s_requestIdToTokenId;\n    mapping(uint256 => uint256) public s_tokenIdToRandomNumber;\n\n    // Chainlink Keeper Variables\n    address public s_chainlinkKeeperRegistryContract;\n    // Retro Cat Randomness Variables\n    /**\n    * @dev Every X cats minted will trigger a new random\n    * number from the chainlink VRF. That X number, is this\n    * variable.\n    */\n    uint256 public s_vrfCallInterval;\n    uint256[] public s_tokenIdRandomnessNeededQueue;\n    address public s_retroCatsMetadata;\n    uint256 public s_catfee;\n    uint256 public s_maxCatMint;\n    /**\n    * @dev Every X cats minted will trigger a new random\n    * number from the chainlink VRF. That X number, is this\n    * variable.\n    */\n\n    // Events\n    event requestedNewChainlinkVRF(bytes32 indexed requestId);\n    event requestedNewCat(uint256 tokenId);\n    event randomNumberAssigned(uint256 indexed tokenId, uint256 indexed randomNumber);\n\n    /**\n    * @notice Deploys the retrocats factory contract\n    * @param _vrfCoordinator The address of the VRF Coordinator \n    * The VRF Coordinator does the due dilligence to ensure\n    * the number returned is truly random. \n    * @param _linkToken The address of the Chainlink token\n    */\n    constructor (address _vrfCoordinator, address _linkToken, bytes32 _keyHash, uint256 _fee, address _retroCatsMetadata, address _chainlinkKeeperRegistryContract, uint256 _vrfCallInterval) public\n    VRFConsumerBase(_vrfCoordinator, _linkToken)\n    ERC721(\"Retro Cats\", \"RETRO\")\n    {\n        s_tokenCounter = 0;\n        s_keyHash = _keyHash;\n        s_fee = _fee;\n        s_vrfCallInterval = _vrfCallInterval;\n        s_retroCatsMetadata = _retroCatsMetadata;\n        s_chainlinkKeeperRegistryContract = _chainlinkKeeperRegistryContract;\n        s_baseURI = \"https://us-central1-retro-cats.cloudfunctions.net/retro-cats-function?token_id=\";\n        s_catfee = 20000000000000000;\n        s_maxCatMint = 10;\n    }\n\n    /**\n    * @notice Mints a new random cat\n    * @dev We only trigger a chainlink VRF call every s_vrfCallInterval mints.\n    * Otherwise, we will have the Chainlink Keeper Network create our \n    * random number, so others can't exploit searching for randomness.\n    * We do this as a cost saving mechanism. Since keepers is cheaper than \n    * Chainlink VRF calls, but we still want true randomness. \n    */\n    function mint_cat(uint256 _amount) public payable nonReentrant returns (uint256 tokenId){\n        require(msg.value >= s_catfee * _amount, \"You must pay the cat fee!\");\n        require(s_maxCatMint >= _amount, \"You can't mint more than the max amount of cats at once!\");\n        for(uint256 i = 0; i < _amount; i++){\n            tokenId = s_tokenCounter;\n            _safeMint(msg.sender, tokenId);\n            if(s_tokenCounter % s_vrfCallInterval == 0){\n                bytes32 requestId = requestRandomness(s_keyHash, s_fee);\n                s_requestIdToTokenId[requestId] = tokenId;\n                emit requestedNewCat(tokenId);\n                emit requestedNewChainlinkVRF(requestId);\n            } else { \n                s_tokenIdRandomnessNeededQueue.push(tokenId);\n                emit requestedNewCat(tokenId);\n            }\n            s_tokenCounter = s_tokenCounter + 1;\n        }\n    }\n\n    function fulfillRandomness(bytes32 requestId, uint256 randomness) internal override {\n        s_recentRandomNumber = randomness;\n        uint256 tokenId = s_requestIdToTokenId[requestId];\n        s_tokenIdToRandomNumber[tokenId] = randomness;\n        emit randomNumberAssigned(tokenId, randomness);\n    }\n\n    function setVRFCallInterval(uint256 newInterval) public onlyOwner {\n        s_vrfCallInterval = newInterval;\n    }\n\n    /**\n    * @notice Checks to see if their are any tokenIds that don't have \n    * a random number & tokenURI associated with them\n    * @param checkData should be empty, needed for keeper network\n    */\n    function checkUpkeep(bytes calldata checkData) external override returns (bool upkeepNeeded, bytes memory performData){\n        upkeepNeeded = s_tokenIdRandomnessNeededQueue.length > 0;\n        performData = checkData;\n    }\n\n    function performUpkeep(bytes calldata performData) external override onlyChainlinkKeepers{\n        require(s_tokenIdRandomnessNeededQueue.length > 0, \"RetroCats: There is nothing in queue!\");\n        uint256 tokenQueueIndex = 0;\n        uint256 tokenId = s_tokenIdRandomnessNeededQueue[tokenQueueIndex];\n        // maybe we loop through a group of 10 (or 10 - tokenCounter % interval) \n        // instead of just doing 1 at a time\n        // This might be an attack vector though\n        uint256 newRandomNumber = uint256(\n                keccak256(\n                    abi.encodePacked(block.difficulty, block.number, block.timestamp, tx.origin, tx.gasprice, tokenId)\n                )\n            );\n        s_tokenIdToRandomNumber[tokenId] = newRandomNumber;\n        emit randomNumberAssigned(tokenId, newRandomNumber);\n        removeFromQueue(tokenQueueIndex);\n    }\n\n    // refactor for gas please\n    function removeFromQueue(uint256 index) internal {\n        if (index >= s_tokenIdRandomnessNeededQueue.length) return;\n\n        for (uint i = index; i<s_tokenIdRandomnessNeededQueue.length-1; i++){\n            s_tokenIdRandomnessNeededQueue[i] = s_tokenIdRandomnessNeededQueue[i+1];\n        }\n        s_tokenIdRandomnessNeededQueue.pop();\n    }\n\n\n    // Only the Chainlink keeper registery should be able to call this contract\n    modifier onlyChainlinkKeepers() {\n        require(msg.sender == s_chainlinkKeeperRegistryContract, \"RetroCats: Caller is not a Chainlink Node!\");\n        _;\n    }\n\n    function setTokenURI(uint256 tokenId, string memory _tokenURI) public onlyOwner {\n        require(\n            _isApprovedOrOwner(_msgSender(), tokenId),\n            \"ERC721: transfer caller is not owner nor approved\"\n        );\n        _setTokenURI(tokenId, _tokenURI);\n    }\n\n    /**\n     * @dev Base URI for computing {tokenURI}. \n     */\n    function _baseURI() internal view virtual override returns (string memory) {\n        return s_baseURI;\n    }\n\n    /**\n     * @dev Sets the BaseURI for computing {tokenURI}. \n     */\n    function _setBaseURI(string memory _baseURI) public onlyOwner(){\n        s_baseURI = _baseURI;\n    }\n\n    function _setRetroCatMetadata(address _retroCatMetadata) public onlyOwner(){\n        s_retroCatsMetadata = _retroCatMetadata;\n    }\n\n    function setCatFee(uint256 _catfee) public onlyOwner {\n        s_catfee = _catfee;\n    }\n\n    function withdraw() public onlyOwner{\n        uint256 amount = address(this).balance;\n        payable(owner()).transfer(amount);\n    }\n\n    function withdrawLink() public onlyOwner {\n        LinkTokenInterface linkToken = LinkTokenInterface(LINK);\n        require(linkToken.transfer(msg.sender, linkToken.balanceOf(address(this))), \"Unable to transfer\");\n    }\n\n    function tokenURI(uint256 tokenId)\n        public\n        view\n        virtual\n        override\n        returns (string memory)\n    {\n        require(_exists(tokenId), \"ERC721Metadata: URI query for nonexistent token\");\n        string memory baseURI = _baseURI();\n        return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, tokenId.toString())) : \"\";\n    }\n}\n",
+  "source": "/** \n\u2588\u2588\u2588\u2588\u2588\u2588\u2557 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2588\u2588\u2588\u2588\u2557  \u2588\u2588\u2588\u2588\u2588\u2588\u2557      \u2588\u2588\u2588\u2588\u2588\u2588\u2557 \u2588\u2588\u2588\u2588\u2588\u2557 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557    \n\u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u2588\u2588\u2554\u2550\u2550\u2550\u2550\u255d\u255a\u2550\u2550\u2588\u2588\u2554\u2550\u2550\u255d\u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u2588\u2588\u2554\u2550\u2550\u2550\u2588\u2588\u2557    \u2588\u2588\u2554\u2550\u2550\u2550\u2550\u255d\u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u255a\u2550\u2550\u2588\u2588\u2554\u2550\u2550\u255d\u2588\u2588\u2554\u2550\u2550\u2550\u2550\u255d    \n\u2588\u2588\u2588\u2588\u2588\u2588\u2554\u255d\u2588\u2588\u2588\u2588\u2588\u2557     \u2588\u2588\u2551   \u2588\u2588\u2588\u2588\u2588\u2588\u2554\u255d\u2588\u2588\u2551   \u2588\u2588\u2551    \u2588\u2588\u2551     \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2551   \u2588\u2588\u2551   \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557    \n\u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u2588\u2588\u2554\u2550\u2550\u255d     \u2588\u2588\u2551   \u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u2588\u2588\u2551   \u2588\u2588\u2551    \u2588\u2588\u2551     \u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2551   \u2588\u2588\u2551   \u255a\u2550\u2550\u2550\u2550\u2588\u2588\u2551    \n\u2588\u2588\u2551  \u2588\u2588\u2551\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557   \u2588\u2588\u2551   \u2588\u2588\u2551  \u2588\u2588\u2551\u255a\u2588\u2588\u2588\u2588\u2588\u2588\u2554\u255d    \u255a\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2551  \u2588\u2588\u2551   \u2588\u2588\u2551   \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2551    \n\u255a\u2550\u255d  \u255a\u2550\u255d\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u255d   \u255a\u2550\u255d   \u255a\u2550\u255d  \u255a\u2550\u255d \u255a\u2550\u2550\u2550\u2550\u2550\u255d      \u255a\u2550\u2550\u2550\u2550\u2550\u255d\u255a\u2550\u255d  \u255a\u2550\u255d   \u255a\u2550\u255d   \u255a\u2550\u2550\u2550\u2550\u2550\u2550\u255d    \n                                                                                 \n\n<<https://github.com/retro-cats/retro-cats-contracts>>\n\n           __..--''``---....___   _..._    __\n       _.-'    .-/\";  `        ``<._  ``.''_ `. / // /\n   _.-' _..--.'_    \\                    `( ) ) // //\n   (_..-' // (< _     ;_..__               ; `' / ///\n //// // //  `-._,_)' // / ``--...____..-' /// / //\n*/\n// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.3;\n\nimport \"@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol\";\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\nimport \"@openzeppelin/contracts/security/ReentrancyGuard.sol\";\nimport \"@openzeppelin/contracts/utils/Strings.sol\";\nimport \"@chainlink/contracts/src/v0.8/VRFConsumerBase.sol\";\nimport \"../interfaces/KeeperCompatibleInterface.sol\";\n\ncontract RetroCats is Ownable, ERC721URIStorage, VRFConsumerBase, ReentrancyGuard, KeeperCompatibleInterface{\n    using Strings for uint256;\n    \n    // ERC721 Variables\n    uint256 public s_tokenCounter;\n    string internal s_baseURI;\n\n    // Chainlink VRF Variables\n    bytes32 internal s_keyHash;\n    uint256 public s_fee;\n    uint256 internal s_recentRandomNumber;\n    mapping(bytes32 => uint256) internal s_requestIdToTokenId;\n    mapping(uint256 => uint256) public s_tokenIdToRandomNumber;\n\n    // Chainlink Keeper Variables\n    address public s_chainlinkKeeperRegistryContract;\n    // Retro Cat Randomness Variables\n    /**\n    * @dev Every X cats minted will trigger a new random\n    * number from the chainlink VRF. That X number, is this\n    * variable.\n    */\n    uint256 public s_vrfCallInterval;\n    uint256[] public s_tokenIdRandomnessNeededQueue;\n    address public s_retroCatsMetadata;\n    uint256 public s_catfee;\n    uint256 public s_maxCatMint;\n    /**\n    * @dev Every X cats minted will trigger a new random\n    * number from the chainlink VRF. That X number, is this\n    * variable.\n    */\n\n    // Events\n    event requestedNewChainlinkVRF(bytes32 indexed requestId);\n    event requestedNewCat(uint256 tokenId);\n    event randomNumberAssigned(uint256 indexed tokenId, uint256 indexed randomNumber);\n\n    /**\n    * @notice Deploys the retrocats factory contract\n    * @param _vrfCoordinator The address of the VRF Coordinator \n    * The VRF Coordinator does the due dilligence to ensure\n    * the number returned is truly random. \n    * @param _linkToken The address of the Chainlink token\n    */\n    constructor (address _vrfCoordinator, address _linkToken, bytes32 _keyHash, uint256 _fee, address _retroCatsMetadata, address _chainlinkKeeperRegistryContract, uint256 _vrfCallInterval) public\n    VRFConsumerBase(_vrfCoordinator, _linkToken)\n    ERC721(\"Retro Cats\", \"RETRO\")\n    {\n        s_tokenCounter = 0;\n        s_keyHash = _keyHash;\n        s_fee = _fee;\n        s_vrfCallInterval = _vrfCallInterval;\n        s_retroCatsMetadata = _retroCatsMetadata;\n        s_chainlinkKeeperRegistryContract = _chainlinkKeeperRegistryContract;\n        s_baseURI = \"https://us-central1-retro-cats.cloudfunctions.net/retro-cats-function?token_id=\";\n        s_catfee = 20000000000000000;\n        s_maxCatMint = 10;\n    }\n\n    /**\n    * @notice Mints a new random cat\n    * @dev We only trigger a chainlink VRF call every s_vrfCallInterval mints.\n    * Otherwise, we will have the Chainlink Keeper Network create our \n    * random number, so others can't exploit searching for randomness.\n    * We do this as a cost saving mechanism. Since keepers is cheaper than \n    * Chainlink VRF calls, but we still want true randomness. \n    */\n    function mint_cats(uint256 _amount) public payable nonReentrant returns (uint256 tokenId){\n        require(msg.value >= s_catfee * _amount, \"You must pay the cat fee!\");\n        require(s_maxCatMint >= _amount, \"You can't mint more than the max amount of cats at once!\");\n        for(uint256 i = 0; i < _amount; i++){\n            tokenId = s_tokenCounter;\n            _safeMint(msg.sender, tokenId);\n            if(s_tokenCounter % s_vrfCallInterval == 0){\n                bytes32 requestId = requestRandomness(s_keyHash, s_fee);\n                s_requestIdToTokenId[requestId] = tokenId;\n                emit requestedNewCat(tokenId);\n                emit requestedNewChainlinkVRF(requestId);\n            } else { \n                s_tokenIdRandomnessNeededQueue.push(tokenId);\n                emit requestedNewCat(tokenId);\n            }\n            s_tokenCounter = s_tokenCounter + 1;\n        }\n    }\n\n    function fulfillRandomness(bytes32 requestId, uint256 randomness) internal override {\n        s_recentRandomNumber = randomness;\n        uint256 tokenId = s_requestIdToTokenId[requestId];\n        s_tokenIdToRandomNumber[tokenId] = randomness;\n        emit randomNumberAssigned(tokenId, randomness);\n    }\n\n    function setVRFCallInterval(uint256 newInterval) public onlyOwner {\n        s_vrfCallInterval = newInterval;\n    }\n\n    /**\n    * @notice Checks to see if their are any tokenIds that don't have \n    * a random number & tokenURI associated with them\n    * @param checkData should be empty, needed for keeper network\n    */\n    function checkUpkeep(bytes calldata checkData) external override returns (bool upkeepNeeded, bytes memory performData){\n        upkeepNeeded = s_tokenIdRandomnessNeededQueue.length > 0;\n        performData = checkData;\n    }\n\n    function performUpkeep(bytes calldata performData) external override onlyChainlinkKeepers{\n        require(s_tokenIdRandomnessNeededQueue.length > 0, \"RetroCats: There is nothing in queue!\");\n        uint256 tokenQueueIndex = 0;\n        uint256 tokenId = s_tokenIdRandomnessNeededQueue[tokenQueueIndex];\n        // maybe we loop through a group of 10 (or 10 - tokenCounter % interval) \n        // instead of just doing 1 at a time\n        // This might be an attack vector though\n        uint256 newRandomNumber = uint256(\n                keccak256(\n                    abi.encodePacked(block.difficulty, block.number, block.timestamp, tx.origin, tx.gasprice, tokenId)\n                )\n            );\n        s_tokenIdToRandomNumber[tokenId] = newRandomNumber;\n        emit randomNumberAssigned(tokenId, newRandomNumber);\n        removeFromQueue(tokenQueueIndex);\n    }\n\n    // refactor for gas please\n    function removeFromQueue(uint256 index) internal {\n        if (index >= s_tokenIdRandomnessNeededQueue.length) return;\n\n        for (uint i = index; i<s_tokenIdRandomnessNeededQueue.length-1; i++){\n            s_tokenIdRandomnessNeededQueue[i] = s_tokenIdRandomnessNeededQueue[i+1];\n        }\n        s_tokenIdRandomnessNeededQueue.pop();\n    }\n\n\n    // Only the Chainlink keeper registery should be able to call this contract\n    modifier onlyChainlinkKeepers() {\n        require(msg.sender == s_chainlinkKeeperRegistryContract, \"RetroCats: Caller is not a Chainlink Node!\");\n        _;\n    }\n\n    function setTokenURI(uint256 tokenId, string memory _tokenURI) public onlyOwner {\n        require(\n            _isApprovedOrOwner(_msgSender(), tokenId),\n            \"ERC721: transfer caller is not owner nor approved\"\n        );\n        _setTokenURI(tokenId, _tokenURI);\n    }\n\n    /**\n     * @dev Base URI for computing {tokenURI}. \n     */\n    function _baseURI() internal view virtual override returns (string memory) {\n        return s_baseURI;\n    }\n\n    /**\n     * @dev Sets the BaseURI for computing {tokenURI}. \n     */\n    function _setBaseURI(string memory _baseURI) public onlyOwner(){\n        s_baseURI = _baseURI;\n    }\n\n    function _setRetroCatMetadata(address _retroCatMetadata) public onlyOwner(){\n        s_retroCatsMetadata = _retroCatMetadata;\n    }\n\n    function setCatFee(uint256 _catfee) public onlyOwner {\n        s_catfee = _catfee;\n    }\n\n    function withdraw() public onlyOwner{\n        uint256 amount = address(this).balance;\n        payable(owner()).transfer(amount);\n    }\n\n    function withdrawLink() public onlyOwner {\n        LinkTokenInterface linkToken = LinkTokenInterface(LINK);\n        require(linkToken.transfer(msg.sender, linkToken.balanceOf(address(this))), \"Unable to transfer\");\n    }\n\n    function tokenURI(uint256 tokenId)\n        public\n        view\n        virtual\n        override\n        returns (string memory)\n    {\n        require(_exists(tokenId), \"ERC721Metadata: URI query for nonexistent token\");\n        string memory baseURI = _baseURI();\n        return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, tokenId.toString())) : \"\";\n    }\n}\n",
   "sourceMap": "2051:7638:15:-:0;;;3673:709;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;3886:15;3903:10;1316:113:2;;;;;;;;;;;;;-1:-1:-1;;;1316:113:2;;;;;;;;;;;;;;;;-1:-1:-1;;;1316:113:2;;;867:23:0;877:12;:10;;;:12;;:::i;:::-;867:9;:23::i;:::-;1382:13:2;;;;:5;;:13;;;;;:::i;:::-;-1:-1:-1;1405:17:2;;;;:7;;:17;;;;;:::i;:::-;-1:-1:-1;;;;;;;;;9369:32:12;;;;;;;;9407;;;;;;;1637:1:1;1742:7;:22;3980:1:15::2;3963:14;:18:::0;3991:9:::2;:20:::0;;;4021:5:::2;:12:::0;;;4043:17:::2;:36:::0;;;4089:19:::2;:40:::0;;-1:-1:-1;;;;;4089:40:15;;::::2;-1:-1:-1::0;;;;;;4089:40:15;;::::2;;::::0;;;4139:33:::2;:68:::0;;;;::::2;::::0;;;::::2;::::0;;;::::2;::::0;;4217:93:::2;::::0;;;;::::2;::::0;;::::2;::::0;;;::::2;-1:-1:-1::0;4217:93:15;::::2;;::::0;;::::2;::::0;:9:::2;::::0;:93:::2;::::0;;::::2;::::0;::::2;:::i;:::-;-1:-1:-1::0;;4331:17:15::2;4320:8;:28:::0;-1:-1:-1;;4373:2:15::2;4358:12;:17:::0;-1:-1:-1;2051:7638:15;;-1:-1:-1;;;2051:7638:15;587:96:8;666:10;587:96;:::o;2041:169:0:-;2096:16;2115:6;;-1:-1:-1;;;;;2131:17:0;;;-1:-1:-1;;;;;;2131:17:0;;;;;;2163:40;;2115:6;;;;;;;2163:40;;2096:16;2163:40;2041:169;;:::o;2051:7638:15:-;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;2051:7638:15;;;-1:-1:-1;2051:7638:15;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;14:177:17;93:13;;-1:-1:-1;;;;;135:31:17;;125:42;;115:2;;181:1;178;171:12;115:2;74:117;;;:::o;196:660::-;;;;;;;;421:3;409:9;400:7;396:23;392:33;389:2;;;443:6;435;428:22;389:2;471:40;501:9;471:40;:::i;:::-;461:50;;530:49;575:2;564:9;560:18;530:49;:::i;:::-;520:59;;619:2;608:9;604:18;598:25;588:35;;663:2;652:9;648:18;642:25;632:35;;686:50;731:3;720:9;716:19;686:50;:::i;:::-;676:60;;755:50;800:3;789:9;785:19;755:50;:::i;:::-;745:60;;845:3;834:9;830:19;824:26;814:36;;379:477;;;;;;;;;;:::o;861:380::-;940:1;936:12;;;;983;;;1004:2;;1058:4;1050:6;1046:17;1036:27;;1004:2;1111;1103:6;1100:14;1080:18;1077:38;1074:2;;;1157:10;1152:3;1148:20;1145:1;1138:31;1192:4;1189:1;1182:15;1220:4;1217:1;1210:15;1074:2;;916:325;;;:::o;:::-;2051:7638:15;;;;;;;;;;;;;;;;;;",
   "sourcePath": "contracts/RetroCats.sol",
   "type": "contract"

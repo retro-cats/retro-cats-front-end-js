@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
     color: "black",
     textAlign: 'center',
     padding: 4,
-    fontSize: '2rem',
+    fontSize: '2rem', // relative to the base root html element
   },
   box: {
     backgroundColor: "white",
@@ -37,6 +37,7 @@ const tabOptions = [
   "search cats"
 ]
 
+// shouldn't export since only using it here
 export const isValidNetwork = (network) => {
   if (networkMapping.hasOwnProperty(network)) {
     return true
@@ -91,8 +92,9 @@ export const Main = () => {
               })}
             </TabContext>
           </Container> :
-          <div className={classes.title}>Please connected to a supported chain!</div> :
-        <div className={classes.title}>Please Connect Metamask and Login!</div>}
+          <div className={classes.title}>Please connected to a supported chain (Rinkeby)!</div> :
+        <div className={classes.title}>Please Connect Metamask and Login!</div>
+      }
     </div >
-  )
+  ) // as you scale you want to have one place to render errors
 }

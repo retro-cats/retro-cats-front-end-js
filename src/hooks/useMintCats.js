@@ -15,7 +15,7 @@ export const useMintCats = (retroCatsAddress) => {
         let cat_price = await contract.methods.s_catfee().call()
         try {
             setMintCatsState({ status: "Mining" })
-            let tx = await contract.methods.mint_cat(amount).send({ from: web3.eth.currentProvider.selectedAddress, value: cat_price * amount })
+            let tx = await contract.methods.mint_cats(amount).send({ from: web3.eth.currentProvider.selectedAddress, value: cat_price * amount })
             setMintCatsState({ status: tx.status })
             console.log(tx)
         } catch (e) {

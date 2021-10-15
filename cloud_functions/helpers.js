@@ -343,7 +343,7 @@ const retroCatsAbi = [
         "type": "uint256"
       }
     ],
-    "name": "mint_cat",
+    "name": "mint_cats",
     "outputs": [
       {
         "internalType": "uint256",
