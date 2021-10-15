@@ -23,16 +23,19 @@ export const CatList = ({ catListData, retroCatsAddress, networkId }) => {
     const { web3, user, Moralis } = useMoralis()
 
     const [imageURLs, setImageURLs] = useState({})
-    useEffect(() => { getImageUrls(retroCatsAddress) }, [])
+    useEffect(() => { getImageUrls(retroCatsAddress) }, [retroCatsAddress, networkId, catListData, user])
 
     const getImageUrls = async (retroCatsAddress) => {
         const NFTImage = Moralis.Object.extend("NFTImage")
         const query = new Moralis.Query(NFTImage)
         query.equalTo("retroCatsAddress", retroCatsAddress)
+        query.containedIn("owner", user.attributes.accounts.map(accounts => accounts.toLowerCase()))
         const results = await query.find()
+        console.log(results)
         let imageURLs = {}
         results.forEach(element => {
             let url = element.get("image").url()
+            console.log(url)
             let tokenId = element.get("tokenId")
             imageURLs[tokenId] = url
         })

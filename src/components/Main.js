@@ -3,9 +3,7 @@ import networkMapping from '../chain-info/deployments/map.json'
 import { MintCats } from "./MintCats"
 import { MyCats } from "./MyCats"
 import { SearchCats } from "./SearchCats"
-import helperConfig from '../helper-config.json'
-import brownieConfig from '../brownie-config.json'
-import { Box, Tabs, Tab, Container } from '@mui/material'
+import { Box, Tabs, Tab, Container, Button } from '@mui/material'
 import { TabContext, TabList, TabPanel } from "@mui/lab"
 import { makeStyles } from '@mui/styles'
 import {
@@ -92,7 +90,14 @@ export const Main = () => {
               })}
             </TabContext>
           </Container> :
-          <div className={classes.title}>Please connected to a supported chain (Rinkeby)!</div> :
+          <div className={classes.title}>
+            Please connected to a supported chain (Rinkeby)!
+            <Button
+              onClick={() => Moralis.switchNetwork("0x4")}
+              variant='contained'>
+              Change to Rinkeby
+            </Button>
+          </div> :
         <div className={classes.title}>Please Connect Metamask and Login!</div>
       }
     </div >

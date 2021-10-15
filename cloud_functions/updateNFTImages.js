@@ -43,6 +43,7 @@ Moralis.Cloud.define("updateNFTImages", async (request) => {
     if (!isUpdating) {
         try {
             await setDatabaseUpdating(true)
+            // only for addresses we've already defined
             if (networkMapping[request.params.networkId]["RetroCats"].includes(request.params.retroCatsAddress)) {
                 // let's first give the chainlink node some time to return the data!
                 if (request.params.shouldSleep) {
@@ -66,6 +67,8 @@ Moralis.Cloud.define("updateNFTImages", async (request) => {
                         let bufferData = { base64: imageData.buffer.toString('base64') }
                         const imageFile = new Moralis.File(`${i}_cat.png`, bufferData)
                         nftImage.set("image", imageFile)
+                        let owner = (await retroCatsContract.methods.ownerOf(i).call()).toLowerCase()
+                        nftImage.set("owner", owner)
                         await nftImage.save(null, { useMasterKey: true })
                         response.push(i)
                     }

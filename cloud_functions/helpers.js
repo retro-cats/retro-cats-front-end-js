@@ -1,6 +1,7 @@
 const networkMapping = {
   "4": {
     "RetroCats": [
+      "0xEd65087a102922B3DAa647382438404D9fD1687d",
       "0x430f50E41110144D5368540554Fdc81A6881e54A",
       "0x9b1F72cAe44c4DE65a43AF383Dfab88aA7e37b6A",
       "0x4B07afF9e5D361C6Dba7254c317C2f6C73ada1f9",
@@ -8,6 +9,7 @@ const networkMapping = {
       "0xc8d8B5a3ED2aA35Df8F1781F2B06A14Fb0411bc8"
     ],
     "RetroCatsMetadata": [
+      "0x194c3133CDf2130DBfce9F35db7776b8445a0E66",
       "0x4Bf78d44bA91F116A9Ced122bA1D23AE650eD74B",
       "0x62070eb1fc9c86BF42E7B9EA8eddA7eeF1106DfA",
       "0xBD7bd74aA17e4f38766F7eF49c6c6F4451113930",

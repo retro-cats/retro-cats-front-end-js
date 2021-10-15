@@ -5,7 +5,8 @@
     "OpenZeppelin/openzeppelin-contracts@4.3.1/ERC721": "2e899043b13dd443f7cf259365d7d8ee97e0f574",
     "OpenZeppelin/openzeppelin-contracts@4.3.1/Strings": "1ce946f6a4eaa185320328620ccf999b9e86db7c",
     "RetroCats": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "RetroCatsMetadata": "b5af657e4052c812e9d1f51af8e8dbf6758e1f3a",
+    "RetroCatsMetadata": "a1d5fe5c3f56eefc31efb519e7700f6ff65b90de",
+    "RetroCatsRaffle": "041e2acd2a4c8699d7bccddca6154e886d2a98b4",
     "VRFCoordinatorMock": "a234e721cab3c47e532d8404949512e63f344855",
     "smartcontractkit/chainlink-brownie-contracts@0.2.1/BasicToken": "92084ac5279a2a3db988d9e01d7e6d3e3a4dab8d",
     "smartcontractkit/chainlink-brownie-contracts@0.2.1/SafeMathChainlink": "3b4158955f564edb18bd7a8ffdb49859c904f0b7",
@@ -13,18 +14,11 @@
     "smartcontractkit/chainlink-brownie-contracts@0.2.1/VRFRequestIDBase": "73df0a6f5d0123eb2b2db0faf62b602aa77c123a"
   },
   "tests": {
-    "tests/integration/test_retro_cat_integration.py": {
+    "tests/unit/test_retro_cat_raffle.py": {
       "coverage": false,
       "isolated": false,
-      "results": "ss",
-      "sha1": "83fa4ef69f69351d43955abfaea43792ece2c384",
-      "txhash": []
-    },
-    "tests/unit/test_retro_cat_metadata.py": {
-      "coverage": false,
-      "isolated": false,
-      "results": "..",
-      "sha1": "e7a79c72049ceddca64746eb8f5fda26920d52ae",
+      "results": "s.",
+      "sha1": "3db792d824a058c4c2f737c209071c0a06740579",
       "txhash": []
     }
   },
