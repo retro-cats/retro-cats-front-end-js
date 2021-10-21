@@ -91,11 +91,11 @@ export const Main = () => {
             </TabContext>
           </Container> :
           <div className={classes.title}>
-            Please connected to a supported chain (Rinkeby)!
+            Please connected to a supported chain (Mainnet)!
             <Button
-              onClick={() => Moralis.switchNetwork("0x4")}
+              onClick={() => Moralis.switchNetwork("0x1")}
               variant='contained'>
-              Change to Rinkeby
+              Change to Mainnet
             </Button>
           </div> :
         <div className={classes.title}>Please Connect Metamask and Login!</div>

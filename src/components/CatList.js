@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
 
 const baseOpenseaURL = "https://opensea.io/assets/"
 const baseTestnetOpenseaURL = "https://testnets.opensea.io/assets/"
-const baseURI = "https://us-central1-retro-cats.cloudfunctions.net/retro-cats-image-rinkeby?token_id="
+
 
 export const CatList = ({ catListData, retroCatsAddress, networkId }) => {
     const classes = useStyles()

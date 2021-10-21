@@ -159,13 +159,13 @@
             "kind": "function",
             "modifiers": [],
             "name": "s_tokenCounter",
-            "nameLocation": "164:14:1",
+            "nameLocation": "165:14:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 26,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "178:2:1"
+              "src": "179:2:1"
             },
             "returnParameters": {
               "id": 29,
@@ -179,7 +179,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 30,
-                  "src": "199:7:1",
+                  "src": "200:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -190,7 +190,7 @@
                     "id": 27,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "199:7:1",
+                    "src": "200:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -199,29 +199,29 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "198:9:1"
+              "src": "199:9:1"
             },
             "scope": 31,
-            "src": "155:53:1",
+            "src": "156:53:1",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
         "scope": 32,
-        "src": "56:154:1",
+        "src": "56:155:1",
         "usedErrors": []
       }
     ],
-    "src": "32:179:1"
+    "src": "32:180:1"
   },
   "contractName": "IRetroCats",
   "dependencies": [],
   "offset": [
     56,
-    210
+    211
   ],
-  "sha1": "008c3e0abf4e9ff4229ab5ba2a7b4a99cbfa668e",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.7;\n\ninterface IRetroCats {\n    function ownerOf(uint256 tokenId) external returns (address owner);\n    function s_tokenCounter() external returns (uint256);\n}\n",
+  "sha1": "5284d1c8b90925dc55fee880e5bea423b7c0d2d6",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.7;\n\ninterface IRetroCats {\n    function ownerOf(uint256 tokenId) external returns (address owner);\n\n    function s_tokenCounter() external returns (uint256);\n}\n",
   "type": "interface"
 }

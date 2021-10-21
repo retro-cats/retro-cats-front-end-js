@@ -1,4 +1,15 @@
 {
+  "1": {
+    "RetroCats": [
+      "0x7e1396C482777185A0Be6420e04403ec961c76cB"
+    ],
+    "RetroCatsMetadata": [
+      "0x1d857f6747Bf7B7431091072De5697EA39172F97"
+    ],
+    "RetroCatsRaffle": [
+      "0x33619bCcaF19D9eB858fbe0a1717FB9E8f14b917"
+    ]
+  },
   "4": {
     "RetroCats": [
       "0xEd65087a102922B3DAa647382438404D9fD1687d",
@@ -10,6 +21,7 @@
       "0xc8d8B5a3ED2aA35Df8F1781F2B06A14Fb0411bc8"
     ],
     "RetroCatsMetadata": [
+      "0xF387a2992bF1eA220A2ac81d83CCb19e85cC4550",
       "0x194c3133CDf2130DBfce9F35db7776b8445a0E66",
       "0x8B1cea4b8c3336c1E75C35782F6A06309fCbdb91",
       "0x4Bf78d44bA91F116A9Ced122bA1D23AE650eD74B",

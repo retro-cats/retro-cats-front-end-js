@@ -1,4 +1,15 @@
 const networkMapping = {
+  "1": {
+    "RetroCats": [
+      "0x7e1396C482777185A0Be6420e04403ec961c76cB"
+    ],
+    "RetroCatsMetadata": [
+      "0x1d857f6747Bf7B7431091072De5697EA39172F97"
+    ],
+    "RetroCatsRaffle": [
+      "0x33619bCcaF19D9eB858fbe0a1717FB9E8f14b917"
+    ]
+  },
   "4": {
     "RetroCats": [
       "0xEd65087a102922B3DAa647382438404D9fD1687d",
@@ -31,37 +42,37 @@ const retroCatsAbi = [
     "inputs": [
       {
         "internalType": "address",
-        "name": "_vrfCoordinator",
+        "name": "vrfCoordinator",
         "type": "address"
       },
       {
         "internalType": "address",
-        "name": "_linkToken",
+        "name": "linkToken",
         "type": "address"
       },
       {
         "internalType": "bytes32",
-        "name": "_keyHash",
+        "name": "keyHash",
         "type": "bytes32"
       },
       {
         "internalType": "uint256",
-        "name": "_fee",
+        "name": "fee",
         "type": "uint256"
       },
       {
         "internalType": "address",
-        "name": "_retroCatsMetadata",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "_chainlinkKeeperRegistryContract",
+        "name": "retroCatsMetadata",
         "type": "address"
       },
       {
         "internalType": "uint256",
-        "name": "_vrfCallInterval",
+        "name": "catFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxCatMint",
         "type": "uint256"
       }
     ],
@@ -185,53 +196,20 @@ const retroCatsAbi = [
     "anonymous": false,
     "inputs": [
       {
-        "indexed": false,
+        "indexed": true,
         "internalType": "uint256",
         "name": "tokenId",
         "type": "uint256"
-      }
-    ],
-    "name": "requestedNewCat",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
+      },
       {
-        "indexed": true,
+        "indexed": false,
         "internalType": "bytes32",
         "name": "requestId",
         "type": "bytes32"
       }
     ],
-    "name": "requestedNewChainlinkVRF",
+    "name": "requestedNewCat",
     "type": "event"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "string",
-        "name": "_baseURI",
-        "type": "string"
-      }
-    ],
-    "name": "_setBaseURI",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_retroCatMetadata",
-        "type": "address"
-      }
-    ],
-    "name": "_setRetroCatMetadata",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
   },
   {
     "inputs": [
@@ -268,30 +246,6 @@ const retroCatsAbi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "bytes",
-        "name": "checkData",
-        "type": "bytes"
-      }
-    ],
-    "name": "checkUpkeep",
-    "outputs": [
-      {
-        "internalType": "bool",
-        "name": "upkeepNeeded",
-        "type": "bool"
-      },
-      {
-        "internalType": "bytes",
-        "name": "performData",
-        "type": "bytes"
-      }
-    ],
-    "stateMutability": "nonpayable",
     "type": "function"
   },
   {
@@ -341,7 +295,7 @@ const retroCatsAbi = [
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_amount",
+        "name": "amount",
         "type": "uint256"
       }
     ],
@@ -404,19 +358,6 @@ const retroCatsAbi = [
   {
     "inputs": [
       {
-        "internalType": "bytes",
-        "name": "performData",
-        "type": "bytes"
-      }
-    ],
-    "name": "performUpkeep",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
         "internalType": "bytes32",
         "name": "requestId",
         "type": "bytes32"
@@ -441,25 +382,12 @@ const retroCatsAbi = [
   },
   {
     "inputs": [],
-    "name": "s_catfee",
+    "name": "s_catFee",
     "outputs": [
       {
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "s_chainlinkKeeperRegistryContract",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
       }
     ],
     "stateMutability": "view",
@@ -481,6 +409,19 @@ const retroCatsAbi = [
   {
     "inputs": [],
     "name": "s_maxCatMint",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "s_maxCatSupply",
     "outputs": [
       {
         "internalType": "uint256",
@@ -525,39 +466,7 @@ const retroCatsAbi = [
         "type": "uint256"
       }
     ],
-    "name": "s_tokenIdRandomnessNeededQueue",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
     "name": "s_tokenIdToRandomNumber",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "s_vrfCallInterval",
     "outputs": [
       {
         "internalType": "uint256",
@@ -640,12 +549,77 @@ const retroCatsAbi = [
   {
     "inputs": [
       {
+        "internalType": "string",
+        "name": "newBaseURI",
+        "type": "string"
+      }
+    ],
+    "name": "setBaseURI",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
         "internalType": "uint256",
-        "name": "_catfee",
+        "name": "catfee",
         "type": "uint256"
       }
     ],
     "name": "setCatFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "setFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "keyHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "setKeyHash",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "maxCatMint",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMaxCatMint",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "retroCatMetadata",
+        "type": "address"
+      }
+    ],
+    "name": "setRetroCatMetadata",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -659,24 +633,11 @@ const retroCatsAbi = [
       },
       {
         "internalType": "string",
-        "name": "_tokenURI",
+        "name": "newTokenURI",
         "type": "string"
       }
     ],
     "name": "setTokenURI",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "newInterval",
-        "type": "uint256"
-      }
-    ],
-    "name": "setVRFCallInterval",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
