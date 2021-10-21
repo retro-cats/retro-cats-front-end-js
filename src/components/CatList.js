@@ -1,47 +1,47 @@
-import { Box, ImageList, ImageListItem } from '@mui/material';
-import { useMoralis, useMoralisQuery } from 'react-moralis';
-import React, { useState, useEffect } from 'react';
-import { makeStyles } from '@mui/styles';
+import { Box, ImageList, ImageListItem } from '@mui/material'
+import { useMoralis, useMoralisQuery } from 'react-moralis'
+import React, { useState, useEffect } from 'react'
+import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles((theme) => ({
   catImg: {
     '&:hover': {
-      boxShadow: '10px 5px 5px black;',
+      boxShadow: '10px 5px 5px black',
       backgroundColor: 'blue',
     },
   },
-}));
+}))
 
-const baseOpenseaURL = 'https://opensea.io/assets/';
-const baseTestnetOpenseaURL = 'https://testnets.opensea.io/assets/';
+const baseOpenseaURL = 'https://opensea.io/assets/'
+const baseTestnetOpenseaURL = 'https://testnets.opensea.io/assets/'
 
 export const CatList = ({ catListData, retroCatsAddress, networkId }) => {
-  const classes = useStyles();
-  const { user } = useMoralis();
+  const classes = useStyles()
+  const { user } = useMoralis()
   const { data: queryResults } = useMoralisQuery('NFTImage', (query) =>
     query.equalTo('retroCatsAddress', retroCatsAddress).containedIn(
       'owner',
       user.attributes.accounts.map((accounts) => accounts.toLowerCase())
     )
-  );
+  )
 
-  const [imageURLs, setImageURLs] = useState({});
+  const [imageURLs, setImageURLs] = useState({})
 
   useEffect(() => {
-    if (queryResults) getImageUrls();
-  }, [queryResults]);
+    if (queryResults) getImageUrls()
+  }, [queryResults])
 
   const getImageUrls = async (retroCatsAddress) => {
-    let imageURLs = {};
+    let imageURLs = {}
     queryResults.forEach((element) => {
-      let url = element.get('image').url();
-      console.log(url);
-      let tokenId = element.get('tokenId');
-      imageURLs[tokenId] = url;
-    });
-    setImageURLs(imageURLs);
-    return imageURLs;
-  };
+      let url = element.get('image').url()
+      console.log(url)
+      let tokenId = element.get('tokenId')
+      imageURLs[tokenId] = url
+    })
+    setImageURLs(imageURLs)
+    return imageURLs
+  }
 
   return (
     <div>
@@ -70,5 +70,5 @@ export const CatList = ({ catListData, retroCatsAddress, networkId }) => {
         </Box>
       )}
     </div>
-  );
-};
+  )
+}
