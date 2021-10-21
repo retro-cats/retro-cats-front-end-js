@@ -1,9 +1,4 @@
-import {
-  useMoralis,
-  useMoralisCloudFunction,
-  useMoralisWeb3Api,
-  useMoralisWeb3ApiCall,
-} from "react-moralis";
+import { useMoralis, useMoralisCloudFunction, useMoralisWeb3Api, useMoralisWeb3ApiCall } from "react-moralis";
 import { Box, Button, Snackbar } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
@@ -18,22 +13,23 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-let shouldSleep = false;
-
 export const MyCats = ({ networkId, retroCatsAddress }) => {
   const classes = useStyles();
   const networkName = networkId ? helperConfig[String(networkId)] : "dev";
   const Web3Api = useMoralisWeb3Api();
-  const { web3, user, Moralis } = useMoralis();
+  const { user } = useMoralis();
   const [refreshButtonHit, setRefreshButtonHit] = useState(false);
   const handleCloseSnack = () => {
     setRefreshButtonHit(false);
   };
 
-  const { fetch, data, error, isLoading } = useMoralisWeb3ApiCall(
-    Web3Api.account.getNFTsForContract,
-    { chain: networkName, address: user.attributes.accounts, token_address: retroCatsAddress }
-  );
+  const { fetch, data, error, isLoading } = useMoralisWeb3ApiCall(Web3Api.account.getNFTsForContract, {
+    chain: networkName,
+    address: user.attributes.accounts,
+    token_address: retroCatsAddress,
+  });
+
+  let shouldSleep;
   const { fetch: runCloudFunc } = useMoralisCloudFunction(
     "updateNFTImages",
     { networkId, retroCatsAddress, shouldSleep },
@@ -42,6 +38,7 @@ export const MyCats = ({ networkId, retroCatsAddress }) => {
 
   const updateNFTImages = () => {
     setRefreshButtonHit(true);
+    shouldSleep = false;
     runCloudFunc();
   };
 

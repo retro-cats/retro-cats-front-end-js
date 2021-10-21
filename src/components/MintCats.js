@@ -16,7 +16,11 @@ const useStyles = makeStyles(() => ({
 const shouldSleep = true;
 
 export const MintCats = ({ retroCatsAddress, networkId }) => {
-  const { Moralis } = useMoralis();
+  const { fetch: runCloudFunc } = useMoralisCloudFunction(
+    "updateNFTImages",
+    { networkId, retroCatsAddress, shouldSleep },
+    { autoFetch: false }
+  );
   const [amountOfCats, setAmountOfCats] = useState(0);
   const handleInputChange = (event) => {
     const newAmount = event.target.value === "" ? "" : event.target.value;
@@ -25,11 +29,6 @@ export const MintCats = ({ retroCatsAddress, networkId }) => {
   };
   const { mintCats, mintCatsState } = useMintCats(retroCatsAddress);
   const [txSuccess, setTxSuccess] = useState(false);
-  const { fetch: runCloudFunc } = useMoralisCloudFunction(
-    "updateNFTImages",
-    { networkId, retroCatsAddress, shouldSleep },
-    { autoFetch: false }
-  );
 
   useEffect(() => {
     if (mintCatsState.status === true) {

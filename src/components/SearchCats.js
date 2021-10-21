@@ -15,7 +15,7 @@ const useStyles = makeStyles(() => ({
 }))
 
 const testnetOpensea = "https://testnets.opensea.io/collection/retro-cats-6qc0zg0sx7"
-const openseaURL = "https://opensea.io/"
+const openseaURL = "https://opensea.io/collection/retro-cats"
 
 
 export const SearchCats = ({ networkId, retroCatsAddress }) => {

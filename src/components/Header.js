@@ -12,7 +12,6 @@ const useStyles = makeStyles(() => ({
     justifyContent: "space-between",
     marginLeft: "20%",
     marginRight: "20%",
-
   }
 }))
 
@@ -28,7 +27,8 @@ export const Header = () => {
     logout,
     authError,
     onAccountsChanged,
-    web3
+    web3,
+    Moralis
   } = useMoralis()
 
   useEffect(() => { if (isAuthenticated) { enableWeb3() } }, [isAuthenticated])
@@ -39,10 +39,19 @@ export const Header = () => {
   }
   const classes = useStyles()
 
+  const buyCrypto = async () => {
+    await Moralis.initPlugins()
+    await Moralis.Plugins.fiat.buy()
+  }
+
   return (
     <nav className={classes.navBarItems}>
       <h2>RetroCats</h2>
       <div>
+        <Button
+          onClick={() => { buyCrypto() }}>
+          Buy Crypto
+        </Button>
         <Button
           variant='contained'
           color='primary'
