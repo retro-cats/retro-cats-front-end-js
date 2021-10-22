@@ -93,7 +93,7 @@ export const Main = () => {
           <div className={classes.title}>
             Please connected to a supported chain (Mainnet)!
             <Button
-              onClick={() => Moralis.switchNetwork("0x1")}
+              onClick={() => { Moralis.switchNetwork("0x1"); window.location.reload(false) }}
               variant='contained'>
               Change to Mainnet
             </Button>

@@ -1,32 +1,13 @@
 const networkMapping = {
   "1": {
     "RetroCats": [
-      "0x7e1396C482777185A0Be6420e04403ec961c76cB"
+      "0x0990faeff7FA89dd42a4c645b2aBA0b209F06fA6",
     ],
     "RetroCatsMetadata": [
-      "0x1d857f6747Bf7B7431091072De5697EA39172F97"
+      "0x8046586928C62B564Ea0ACb9c5d143cAB2f345fC",
     ],
     "RetroCatsRaffle": [
-      "0x33619bCcaF19D9eB858fbe0a1717FB9E8f14b917"
-    ]
-  },
-  "4": {
-    "RetroCats": [
-      "0xEd65087a102922B3DAa647382438404D9fD1687d",
-      "0x430f50E41110144D5368540554Fdc81A6881e54A",
-      "0x9b1F72cAe44c4DE65a43AF383Dfab88aA7e37b6A",
-      "0x4B07afF9e5D361C6Dba7254c317C2f6C73ada1f9",
-      "0xc8d8B5a3ED2aA35Df8F1781F2B06A14Fb0411bc8",
-      "0xc8d8B5a3ED2aA35Df8F1781F2B06A14Fb0411bc8"
-    ],
-    "RetroCatsMetadata": [
-      "0x194c3133CDf2130DBfce9F35db7776b8445a0E66",
-      "0x4Bf78d44bA91F116A9Ced122bA1D23AE650eD74B",
-      "0x62070eb1fc9c86BF42E7B9EA8eddA7eeF1106DfA",
-      "0xBD7bd74aA17e4f38766F7eF49c6c6F4451113930",
-      "0x0E87157D7bB50073b0544B79D447999087F3Af90",
-      "0xf4FDaA32738330383e06D39D8D1291aa6d3A1084",
-      "0xCd60d020c8194BED4CcfCb3F16b06908440C55a4"
+      "0x7Ab81446b16d8ef6F1208bB0Cde601638546584D",
     ]
   }
 }
@@ -34,7 +15,6 @@ const networkMapping = {
 const networkIdToString = {
   "1": "0x1",
   "4": "0x4",
-  "42": "0x2a",
 }
 
 const retroCatsAbi = [

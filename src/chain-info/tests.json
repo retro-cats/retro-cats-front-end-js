@@ -17,49 +17,23 @@
       "coverage": false,
       "isolated": false,
       "results": "s",
-      "sha1": "8efec8038956e195531f01356467f84ad3c4c395",
+      "sha1": "e6a000bb6f4046baf2984359f05607045ac556ec",
       "txhash": []
-    },
-    "tests/unit/test_retro_cat.py": {
-      "coverage": false,
-      "isolated": false,
-      "results": "ssssssssss.",
-      "sha1": "947764263b1343c1d643de22fc2dea3cf50b3df5",
-      "txhash": [
-        "3f05e93fbaf50bfeda32f359fb22195f2738d14d"
-      ]
     },
     "tests/unit/test_retro_cat_metadata.py": {
       "coverage": false,
       "isolated": false,
       "results": "..",
-      "sha1": "28e45bba6b9c67ad5a6899f84f00610c903a4a92",
+      "sha1": "602cd4fc141b8ba4f68db8487091430b25231957",
       "txhash": []
     },
     "tests/unit/test_retro_cat_raffle.py": {
       "coverage": false,
       "isolated": false,
       "results": "..",
-      "sha1": "fc99442ddbedb982776708a2e52fe83a68e40c44",
+      "sha1": "6b3f5cb9f63650fc2c4b6f857a6379f41dc79e50",
       "txhash": []
     }
   },
-  "tx": {
-    "3f05e93fbaf50bfeda32f359fb22195f2738d14d": {
-      "LinkToken": {
-        "5": [
-          [
-            7
-          ],
-          [],
-          []
-        ],
-        "8": [
-          [],
-          [],
-          []
-        ]
-      }
-    }
-  }
+  "tx": {}
 }
